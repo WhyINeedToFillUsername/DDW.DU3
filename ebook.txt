@@ -1,0 +1,3023 @@
+Front Matter
+
+
+Preface
+
+
+
+
+
+Foundations Problem Statement
+
+Our Simulation Application
+
+Soapbox on Use Cases
+
+Solution Approach
+
+Methodology, Technique and Process
+
+Additional Topics: Non-Functional Requirements
+
+Deliverables
+
+
+
+
+
+Roulette
+
+
+This part describes the game of Roulette. Roulette is the game with the big wheel. They spin the wheel, toss in a marble and wait for the wheel to stop spinning.
+
+Roulette is – essentially – a stateless game with numerous bets and a very simple process for game play.
+
+The chapters of this part present the details on the game, an overview of the solution, and a series of sixteen exercises to build a complete simulation of the game, plus a variety of betting strategies. Each exercise chapter builds at least one class, plus unit tests; in some cases, this includes rework of previous deliverables.
+
+Roulette Details Roulette Game
+
+Available Bets in Roulette
+
+Some Betting Strategies
+
+Roulette Details Questions and Answers
+
+
+
+
+
+Roulette Solution Overview Preliminary Survey of Classes
+
+Preliminary Roulette Class Structure
+
+A Walkthrough of Roulette
+
+Roulette Solution Questions and Answers
+
+
+
+
+
+Outcome Class Outcome Analysis
+
+Design Decision – Object Identity
+
+Looking Forward
+
+Outcome Design
+
+Outcome Deliverables
+
+Message Formatting
+
+
+
+
+
+Bin Class Bin Analysis
+
+Design Decision – Choosing A Collection
+
+Wrap vs. Extend a Collection
+
+Bin Questions and Answers
+
+Bin Design
+
+Bin Deliverables
+
+
+
+
+
+Wheel Class Wheel Analysis
+
+Wheel Design
+
+Test Setup
+
+Wheel Deliverables
+
+
+
+
+
+Bin Builder Class Bin Builder Analysis
+
+Bin Builder Algorithms
+
+BinBuilder Design
+
+Bin Builder Deliverables
+
+Internationalization and Localization
+
+
+
+
+
+Roulette Bet Class Roulette Bet Analysis
+
+Design Decision – Create or Locate an Outcome
+
+Roulette Bet Questions and Answers
+
+Roulette Bet Design
+
+Roulette Bet Deliverables
+
+
+
+
+
+Roulette Table Class Roulette Table Analysis
+
+InvalidBet Exception Design
+
+Roulette Table Design
+
+Roulette Table Deliverables
+
+
+
+
+
+Roulette Game Class Roulette Game Analysis
+
+Passenger57 Design
+
+Roulette Game Design
+
+Roulette Game Questions and Answers
+
+Roulette Game Deliverables
+
+Appendix: Roulette Variations
+
+
+
+
+
+Review of Testability Test Scaffolding
+
+Test-Driven Design
+
+Capturing Pseudo-Radom Data
+
+Testability Questions and Answers
+
+Testability Deliverables
+
+Appendix: On Random Numbers
+
+
+
+
+
+Player Class Roulette Player Analysis
+
+Player Design
+
+Martingale Player Design
+
+Player Deliverables
+
+
+
+
+
+Overall Simulation Control Simulation Analysis
+
+Statistical Summary
+
+Simulator Design
+
+Player Rework
+
+Simulation Control Deliverables
+
+
+
+
+
+SevenReds Player Class SevenReds Player Analysis
+
+Soapbox on Composition
+
+SevenReds Design
+
+Player Rework
+
+Game Rework
+
+Table Rework
+
+SevenReds Player Deliverables
+
+
+
+
+
+Statistical Measures Statistical Analysis
+
+Some Foundations
+
+Statistical Algorithms
+
+IntegerStatistics Design
+
+Statistics Deliverables
+
+
+
+
+
+Random Player Class Random Player Analysis
+
+Random Player Design
+
+Random Player Deliverables
+
+
+
+
+
+Player 1-3-2-6 Class Player 1-3-2-6 Analysis
+
+On Polymorphism
+
+Player 1-3-2-6 Questions and Answers
+
+Player1326 State Design
+
+Player1326 No Wins Design
+
+Player1326 One Win Design
+
+Player1326 Two Wins Design
+
+Player1326 Three Wins
+
+Player1326 Design
+
+Player 1-3-2-6 Deliverables
+
+Advanced Exercise – Refactoring
+
+Advanced Exercise – Less Object Creation
+
+
+
+
+
+Cancellation Player Class Cancellation Player Analysis
+
+PlayerCancellation Design
+
+Cancellation Player Deliverables
+
+
+
+
+
+Fibonacci Player Class Fibonacci Player Analysis
+
+PlayerFibonacci Design
+
+Fibonacci Player Deliverables
+
+
+
+
+
+Conclusion Exploration
+
+The SOLID Principles
+
+Other Design Patterns
+
+
+
+
+
+Craps
+
+
+This part describes parts of the more complex game of Craps. Craps is played with dice. A player throws the dice; sometimes it’s an immediate win (or loss). Other times, the number on the dice become the “point”, and you contine throwing dice until you make your point or crap out.
+
+Craps is a game with two states and a number of state-change rules. It has a variety betting alternatives, some of which are quite complex.
+
+The chapters of this part presents the details on the game, an overview of the solution, and a series of eleven exercises to build a complete simulation of the game, with a variety of betting strategies. The exercises in this part are more advanced; unlike Roulette, we will often combine several classes into a single batch of deliverables.
+
+There are several examples of rework in this part, some of them quite extensive. This kind of rework reflects three more advanced scenarios: refactoring to generalize and add features, renaming to rationalize the architecture, and refactoring to extract features. Each of these is the result of learning; they are design issues that can’t easily be located or explained in advance.
+
+Craps Details Craps Game
+
+Creating A Dice Frequency Distribution
+
+Available Bets
+
+Some Betting Strategies
+
+Wrong Betting
+
+
+
+
+
+Craps Solution Overview Preliminary Survey of Classes
+
+Preliminary Craps Class Structure
+
+A Walkthrough of Craps
+
+Craps Solution Questions and Answers
+
+
+
+
+
+Outcome Class Outcome Analysis
+
+Fractional Odds Design
+
+Optional Parameter Implementation Technique
+
+Outcome Rework
+
+Outcome Deliverables
+
+
+
+
+
+Throw Class Throw Analysis
+
+The Wrap vs. Extend Question
+
+Throw Design
+
+Natural Throw Design
+
+Craps Throw Design
+
+Eleven Throw Design
+
+Point Throw Design
+
+Craps Game Design
+
+Throw Deliverables
+
+
+
+
+
+Dice Class Dice Analysis
+
+Throw Rework
+
+Dice Design
+
+Dice Deliverables
+
+Dice Optimization
+
+
+
+
+
+Throw Builder Class Throw Builder Analysis
+
+Outcomes with Variable Odds
+
+Refactoring The Outcome Hierarchy
+
+Soapbox on Subclasses
+
+Soapbox on Architecture
+
+Throw Builder Questions and Answers
+
+Soapbox on Justification
+
+Design Light
+
+Design Heavy
+
+Common Design
+
+Throw-Builder Deliverables
+
+
+
+
+
+Bet Class Bet Analysis
+
+Bet Rework
+
+CommissionBet Design
+
+Bet Deliverables
+
+
+
+
+
+Craps Table Class Craps Table Analysis
+
+Design Decision – Table vs. Game Responsibility
+
+Design Decision – Allowable Outcomes
+
+Design Decision – Domain of Allowed Bets
+
+Handling Working Bets
+
+CrapsGame Stub
+
+Craps Table Design
+
+Craps Table Deliverables
+
+
+
+
+
+CrapsGame Class Craps Game Analysis
+
+Design Decision – Win, Lose, Wait
+
+Additional Craps Design
+
+Craps Game Implementation Steps
+
+Throw Rework
+
+ThrowBuilder Rework
+
+Bet Rework
+
+CrapsPlayer Class Stub
+
+CrapsGameState Class
+
+CrapsGamePointOff Class
+
+CrapsGamePointOn Class
+
+CrapsGame Design
+
+Craps Game Deliverables
+
+Optional Working Bets
+
+
+
+
+
+CrapsPlayer Class Craps Player Analysis
+
+CrapsPlayer Design
+
+CrapsPlayerPass Subclass
+
+Craps Martingale Subclass
+
+Craps Player Deliverables
+
+
+
+
+
+Design Cleanup and Refactoring Design Review
+
+RandomEventFactory Design
+
+Wheel Class Design
+
+Dice Class Design
+
+Table Class Design
+
+Player Class Design
+
+Game Class Design
+
+RouletteGame Class Design
+
+CrapsGame Class Design
+
+Refactoring Deliverables
+
+
+
+
+
+Simple Craps Players Simple Craps Players Analysis
+
+CrapsPlayer Design
+
+CrapsSimplePlayer superclass
+
+Craps Martingale Player
+
+Player1326 State
+
+Craps1326 Player
+
+CrapsCancellation Player
+
+Simple Craps Players Deliverables
+
+
+
+
+
+Roll-Counting Player Class Roll-Counting Analysis
+
+BettingStrategy Design
+
+NoChangeBetting Class
+
+MartingaleBetting Class
+
+Bet1326Betting Class
+
+CrapsOneBetPlayer class
+
+CrapsTwoBetPlayer class
+
+CrapsSevenCountPlayer class
+
+Roll-Counting Deliverables
+
+
+
+
+
+Conclusion
+
+
+
+
+
+Blackjack
+
+
+This part describes the more complex game of Blackjack. Both the player and the dealer are trying to build a hand that totals 21 points without going over. The hand closest to 21 wins.
+
+This game has a number of states and a number of complex state-change rules. It has very few different kinds of bets, but moderately complex rules for game play. However, it does have the most sophisticated playing strategy, since the player has a number of choices to make.
+
+The chapters of this part presents the details on the game, an overview of the solution, and a series of six relatively complex exercises to build a complete simulation of the game. In the case of Blackjack, we have to create a design that allows for considerable variation in the rules of the game as well as variation in the player’s betting strategies.
+
+Blackjack Details Blackjack Game
+
+Available Bets and Choices
+
+Betting Strategies
+
+
+
+
+
+Blackjack Solution Overview Preliminary Survey of Classes
+
+Preliminary Class Structure
+
+A Walkthrough
+
+Blackjack Solution Questions and Answers
+
+
+
+
+
+Card, Deck and Shoe Classes Card, Deck and Shoe Analysis
+
+Card-Deck-Shoe Questions and Answers
+
+Card Superclass
+
+FaceCard Class
+
+AceCard Class
+
+Card Factory Function
+
+Deck class
+
+Shoe class
+
+Card-Deck-Shoe Deliverables
+
+
+
+
+
+Hand and Outcome Classes Hand Analysis
+
+Hand Total Class Design
+
+Hand Hard Total Class Design
+
+Hand Soft Total Class Design
+
+Card Class Updates
+
+Hand Class Design
+
+Hand Deliverables
+
+
+
+
+
+Blackjack Table Class Blackjack Table Analysis
+
+BlackjackTable Class
+
+Hand Rework
+
+Blackjack Table Deliverables
+
+
+
+
+
+Blackjack Game Class Blackjack Game Analysis
+
+Blackjack Collaboration
+
+Dealer Rules
+
+BlackjackPlayer Class
+
+Card Rework
+
+Hand Rework
+
+BlackjackGame Class
+
+Blackjack Game Deliverables
+
+
+
+
+
+Simple Blackjack Player Class Blackjack Player Analysis
+
+SimpleBlackjackPlayer Design
+
+Blackjack Player Deliverables
+
+
+
+
+
+Variant Game Rules Variant Game Analysis
+
+BlackjackGame Rework
+
+OneDeckGame Class
+
+Variant Game Deliverables
+
+
+
+
+
+Conclusion
+
+
+
+
+
+Fit and Finish
+
+
+A finished application includes more than just a working program. There are two additional questions.
+
+How do you know it works? That is, do you have any tests that demonstrate that it works correctly?
+
+We address this by creating unit tests.
+
+
+
+How is it designed?
+
+We address this by creating documentation within the program’s source files. This documentation can be extracted to create a tidy, complete reference for all the classes and functions within our application.
+
+
+
+
+
+Python Unit Testing Using Unit Tests
+
+Dependencies
+
+Example Unit Test
+
+Example Class Definition
+
+
+
+
+
+Python doctest Testing Building Doctest Examples
+
+Mixed unittest and doctest
+
+
+
+
+
+Python Documentation Documentation Development
+
+Using Sphinx
+
+Using Epydoc
+
+Basic RST Markup
+
+Interpreted Text, or Inline Markup
+
+RST Field Markup
+
+Directives
+
+Standard Paragraphs
+
+Class Example
+
+Example Sphinx Automodule
+
+
+
+
+
+Back Matter
+
+
+Bibliography Use Cases
+
+Computer Science
+
+Design Patterns
+
+Statistics
+
+Python
+
+Casino Games
+
+
+
+
+
+Toolset
+
+
+
+
+
+Indices and tables
+
+
+Index
+
+Search Page
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Preface
+
+
+Why Read This Book?
+
+
+One way to master OO design is do design and implementation of a large number of classes. This book guides you through exercises to design dozens of classes that must work together to create a large – and reasonably complete – application. We’ll discuss the design in some detail to reveal an approach to object-oriented design.
+
+While it is also important to read examples of good design, a finished product doesn’t reveal the designer’s decision-making process. Our goal in this book is to help programmer understand the design process that leads to a final product.
+
+Everything is Design It’s important to note that all software development involves considerable skill in design. In some circles, there is an attempt to distinguish between architects (or designers) and coders. The idea is that someone can be able to work with a language – coding – but not quite ready to do design work. The coders can be given a detailed “specification” from which they can write code.
+
+This distinction between designers and coders doesn’t really exist. It’s unhelpful to try and make this distinction. All programming involves design at some level.
+
+If we attempt to write a design specification so detailed that someone else can transform it into code without them having to make any design decisions, the specification is isomorphic to code, but written in some non-technical language like English. The design has all the details of code. An automated translation could produce code from this magically complete with fewer errors than a person.
+
+If we write specifications at somewhat more abstract level, we’re demanding that the “coder” makes some design decisions to move from the abstraction to concrete code. The more abstract the specification, the more design work must be done. The amount of design work is non-zero.
+
+The point of this book is to build skills in object-oriented design prior to a project with a fixed budget and a looming deadline.
+
+
+
+
+What You’ll Do
+
+
+This book provides a sequence of interesting and moderately complex exercises in OO design. The exercises are not hypothetical, but must lead directly to working programs.
+
+The applications we will build are a step above trivial, and will require some careful thought as part of creating a workable design. Further, because the applications are largely recreational in nature, they are interesting and engaging. This book allows the reader to explore the processes and artifacts of OO design before project deadlines make good design seem impossible.
+
+The first part will be quite detailed. The third part will summarize the designs at a higher level of abstraction.
+
+
+
+
+Audience
+
+
+Our primary audience includes programmers who are new to OO programming.
+
+Knowledge of the Python language is essential. Since the focus is on OO techniques, some exposure to class definitions is important. We will provide exercises that have four key features:
+
+complex enough to require careful design work,
+
+fun enough to be engaging,
+
+easy enough that results are available immediately, and
+
+can be built in simple stages.
+
+
+
+We’ll provide a few additional details on language features. We’ll mark these as “Tips”. For more advanced students, these tips will be review material. We will not provide a thorough background in any programming language. The student is expected to know the basics of the language and tools.
+
+Helpful additional skills include using one of the various unit test and documentation frameworks available. We’ve included information in the appendices.
+
+Classroom Use. Instructors are always looking for classroom projects that are engaging, comprehensible, and focus on perfecting language skills. Many real-world applications require considerable explanation of the problem domain; the time spent reviewing background information detracts from the time available to do the relevant programming. While all application programming requires some domain knowledge, the idea behind these exercises is to pick a domain that many people know a little bit about. This allows an instructor to use some or all of these exercises without wasting precious classroom time on incidental details required to understand the problem.
+
+Skills. This book assumes an introductory level of skill in the Python language. We’ll focus on Python 3.4 as a minimum, with references to features of Python 3.5
+
+Student skills we expect include the following. If you can’t do these things, this book may be too advanced.
+
+Create source files, compile and run application programs. While this may seem obvious, we don’t discuss any integrated development environment (IDE). We have to assume these basic skills are present.
+
+Use of the core procedural programming constructs: variables, statements, exceptions, functions. We will not, for example, spend any time on design of loops that terminate properly.
+
+Some exposure to class definitions and subclasses. This includes managing the basic features of inheritance, as well as overloaded method names.
+
+Some exposure to the various kinds of built-in collections.
+
+Optionally, some experience with a unit testing framework. See the appendices for supplemental exercises if you aren’t familiar with Python’s unittest or doctest.
+
+Optionally, some experience writing formal documentation. For Python programmers, this means writing docstrings and using a tool like Epydoc or sphinx. See the appendices for supplemental exerises if you aren’t familiar with formal, deliverable documentation.
+
+
+
+
+
+Organization of This Book
+
+
+This book presents a series of exercises to build simulations of the common, popular casino table games: Roulette, Craps and Blackjack. Each simulation can be extended to include variations on the player’s betting system. With a simple statistical approach, we can show the realistic expectations for any betting system. Each of these games has a separate part in this book. Each part consists of a number of individual exercises to build the entire simulation. The completed project results in an application that can provide simple tabular results that shows the average losses expected from each betting strategy.
+
+The interesting degree of freedom in each of the simulations is the player’s betting strategy. The design will permit easy adaptation and maintenance of the player’s strategies. The resulting application program can be extended by inserting additional betting systems, which allows exploration of what (if any) player actions can minimize the losses.
+
+Roulette. For those who’ve never been in a casino, or seen movies that have casinos in them, Roulette is the game with the big wheel. They spin the wheel and toss in a marble. When the wheel stops spinning, the bin in which the marble rests defines the winning outcomes.
+
+People who bet on the right things get money. People who bet on the wrong things lose money.
+
+Starting in Roulette, we proceed slowly, building up the necessary application one class at a time. Since this is the simplest game, the individual classes reflect that simplicity. We focus on isolation of responsibilities, creating a considerable number of classes. The idea is to build skills in object design by applying those skills to a number of classes.
+
+The first chapter of the part provides details on the game of Roulette and the problem that the simulation solves. The second chapter is an overview of the solution, setting out the highest-level design for the application software. This chapter includes a technique for doing a “walk-through” of the design to be confident that the design will actually solve the problem.
+
+Each of the remaining sixteen chapters is a design and programming exercise to be completed by the student. Plus or minus a Frequently Asked Questions (FAQ) section, each chapter has the same basic structure: an overview of the components being designed, some design details, and a summary of the deliverables to be built. The overview section presents some justification and rationale for the design. This material should help the student understand why the particular design was chosen. The design section provides a more detailed specification of the class or classes to be built. This will include some technical information on Java or Python implementation techniques.
+
+Craps. For those who’ve never been in a casino, or seen the play “Guys and Dolls”, Craps is the game with the dice. A player rolls (“shoots”) the dice. Sometimes there’s a great deal of shouting and clapping. A throw of the dice may – or may not – resolve bets. Additionally, a throw of the dice may also change the state of the game. A casino provides a number of visual cues as to the state of the game and the various bets.
+
+In Craps, we build on the design patterns from Roulette. Craps, however, is a stateful game, so there is a more sophisticated design to handle the interactions between dice, game state and player. We exploit the State design pattern to show how the design pattern can be applied to this simple situation.
+
+The first chapter is background information on the game of Craps, and the problem that the simulation solves. The second chapter is an overview of the solution, setting out the highest-level design for the application software. This chapter also provides a “walk-through” of the design.
+
+Each of the remaining eleven chapters is an exercise to be completed by the student. Each chapter has the same basic structure: an overview of the component being designed, some design details, and a summary of the deliverables to be built.
+
+Blackjack. For those who’ve never been in a casino, or seen a movie with Blackjack, Blackjack is a game with cards. The dealer deals two cards to themselves and each player. One of the dealer’s card is up and one is down, providing a little bit of information on the dealer’s hand. The players may ask for additional cards, or keep the hand they’ve got.
+
+The idea is to build a hand that’s close to 21 points, but not more than 21. In Craps and Roulette there are a lot of bets, but few player decisions. In Blackjack, there are few bets, but really complex player decisions.
+
+In Blackjack, the game states are more sophisticated than Craps or Roulette. In casino gift shops, you can buy small summary cards that enumerate all possible game states and responses. The more advanced student can tackle these sophisticated playing strategies. For the less advanced student we will simplify the strategies down to a few key conditions.
+
+The first two chapters are background information on the game of Blackjack, the problem that the simulation solves, and an overview of the solution, setting out the highest-level design for the application software. Each of the remaining six chapters is an exercise to be completed by the student. Since this is more advanced material, and builds on previous work, this part has many simple deliverables compressed into the individual chapters.
+
+Fit and Finish. We include several fit-and-finish issues in Fit and Finish. This includes more information and examples on unit testing and documentation.
+
+Additionally, we cover some “main program” issues required to knit all of the software components together into a finished whole.
+
+
+
+
+Why This Subject?
+
+
+Casino table games may seem like an odd choice of subject matter for programming exercises. We find that casino games have a number of advantages for teaching OO design and OO programming.
+
+Casino games have an almost ideal level of complexity. If they were too simple, the house edge would be too obvious and people would not play them. If they were too complex, people would not enjoy them as simple recreation. Years (centuries?) of experience in the gaming industry has fine-tuned the table games to fit nicely with the limits of our human intellect.
+
+Simulation of discrete phenomena lies at the origin of OO programming. We have found it easier to motivate, explain and justify OO design when solving simulation problems. The student can then leverage this insight into other applications of OO programming for more common transactional applications.
+
+The results are sophisticated but easy to interpret. Probability theory has been applied by others to develop precise expectations for each game. These simulations should produce results consistent with the known probabilities. This book will skim over the probability theory in order to focus on the programming. For a few exercises, the theoretical results will be provided to serve as checks on the correctness of the student’s work.
+
+They’re more fun than most other programming problems.
+
+
+
+This book does not endorse casino gaming. Indeed, one of the messages of this book is that all casino games are biased against the player. Even the most casual study of the results of the exercises will allow the student to see the magnitude of the house edge in each of the games presented.
+
+
+
+
+Conventions Used in This Book
+
+
+Here is how we might present code.
+
+
+Typical Python Example
+
+from collections import defaultdict combo = defaultdict(int) for i in range(1,7): for j in range(1,7): roll= i+j combo[roll] += 1 for n in range(2,13): print( "{0:d} {1:.2%}".format( n, combo[n]/36.0 ) )
+
+
+
+
+
+We create a Python dictionary, a map from key to value. We use the collections.defaultdict so that missing keys are created in the dictionary with an initial value created by the int() function.
+
+We iterate through all combinations of two dice, using variables i and j to represent each die.
+
+We sum the dice to create a roll. We increment the value in the dictionary based on the roll.
+
+Finally, we print each member of the resulting dictionary. We’ve used a sophisticated format string that interpolates a decimal value and a floating-point percentage value.
+
+
+
+The output from the above program will be shown as follows:
+
+2 2.78% 3 5.56% 4 8.33% 5 11.11% 6 13.89% 7 16.67% 8 13.89% 9 11.11% 10 8.33% 11 5.56% 12 2.78%
+
+
+
+
+
+We will use the following type styles for references to a specific Class, method(), or variable.
+
+Tip
+
+Tips Look Like This
+
+There will be design tips, and warnings, in the material for each exercise. These reflect considerations and lessons learned that aren’t typically clear to starting OO designers.
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Foundations
+
+
+We’ll set our goal by presenting several elements that make up a complete Problem Statement: a context in which the problem arises, the problem, the forces that influence the choice of solution, the solution that balances the forces, and some consequences of the chosen solution.
+
+Based on the problem statement, we’ll present the high-level use case that this software implements. This will be Our Simulation Application.
+
+In Solution Approach we’ll summarize the approach to the solution, describing the overall strategy that we will follow. This is a kind of overall design pattern that we’ll use to establish some areas of responsibility.
+
+We’ll look at some issues in Methodology, Technique and Process that are not technical in nature. They’re more procedural and provide some direction on development, testing and writing documentation.
+
+In Additional Topics: Non-Functional Requirements we’ll look at issues like Quality, Rework, Reuse, and Design Patterns.
+
+Finally, in Deliverables_, we’ll address the kinds of deliverables that should be produced. These kinds of deliverables form the basis for each chapter.
+
+
+
+
+
+Problem Statement
+
+
+We’ll start with a big-picture overview of our problem. We’ll present the context in which the problem arises, a summary of the problem, and a “business use case”. This will show how our application is used.
+
+We can then dig into the details of our application.
+
+Important
+
+Fools Rush In
+
+It’s important not to rush in to programming.
+
+Be sure you understand the problem being solved and how software solves that problem.
+
+
+
+Context. Our context is the “classic” casino table games played against the house, including Roulette, Craps and Blackjack. We want to explore the consequences of various betting strategies for these casino games.
+
+Questions include “How well does the Cancellation strategy work?” “How well does the Martingale strategy works for the Come Line odds bet in Craps?” “How well does this Blackjack strategy I found on the Internet compare with the strategy card I bought in the gift shop?”
+
+A close parallel to this is exploring variations in rules and how these different rules have an influence on outcomes. Questions include “What should we do with the 2x and 10x odds offers in Craps?” “How should we modify our play for a single-deck Blackjack game with 6:5 blackjack odds?”
+
+Our context does not include exploring or designing new casino games. Our context also excludes multi-player games like poker. We would like to be able to include additional against-the-house games like Pai Gow Poker, Caribbean Stud Poker, and Baccarat.
+
+Problem. Our problem is to answer the following question: For a given game, what player strategies produce the best results?
+
+Forces. There are a number of forces that influence our choice of solution. First, we want an application that is relatively simple to build. Instead of producing an interactive user interface, we will produce raw data and statistical summaries. If we have little interaction, a command-line interface will work perfectly. We can have the user specify a player strategy and the application respond with a presentation of the results. If the results are tab-delimited or in comma-separated values (CSV) format, they can be pasted into a spreadsheet for further analysis.
+
+Another force that influences our choice of solution is the need to be platform and language agnostic. In this case, we have selected an approach that works well on POSIX-compliant operating systems (i.e., Linux, MacOS, and all of the proprietary UNIX variants), and also works on non-compliant operating systems (i.e., all of the Windows versions).
+
+We also need to strike a balance between interesting programming, probability theory, and statistics. On one hand, the simplicity of these games means that complete analyses have been done using probability theory. However, that’s not a very interesting programming exercise, so we will ignore the pure probability theory route in favor of learning OO design and programming.
+
+Another force is the desire to reflect actual game play. While a long-running simulation of thousands of invidual cycles of play will approach the theoretical results, people typically don’t spend more than a few hours at a table game. If, for example, a Roulette wheel is spun once each minute, a player is unlikely to see more that 480 spins in an eight-hour evening at a casino. Additionally, many players have a fixed budget, and the betting is confined by table limits. Finally, we need to address the subject of “money management”: a player may elect to stop playing when they are ahead. This structures our statistical analysis: we must simulate sessions of play that are limited in time, the amount lost and the amount won.
+
+High-Level Use Case. The high-level (or “business”) use case is an overall cycle of investigation . From this overall view, the actor’s goal is to find an optimal strategy for a given game.
+
+Here’s the scenario we’re imagining.
+
+
+Business Use Case
+
+Actor. Researches alternative strategies. Uses IDE to build new classes for a simulator.
+
+IDE. Creates new classes for the simulator.
+
+Actor. Runs the simulator with selection of game and strategy.
+
+Simulator. Responds with statistical results.
+
+Actor. Evaluates the results. Uses a spreadsheet or other tool for analysis and visualization.
+
+
+
+Consequences. We’re going build the simulator application that supports this high-level (or “business”) use case.
+
+We’re not going to build the IDE to build the new classes. Any IDE should work.
+
+Additionally, we won’t address how to analyze the results.
+
+One of the most important consequences of our solution is that we will build an application into which new player betting strategies can be inserted. Clever gamblers invent new strategies all the time.
+
+We will not know all of the available strategies in advance, so we will not be able to fully specify all of the various design details in advance. Instead, we will find ourselves reworking some parts of the solution, to support a new player betting strategy. This forces us to take an Agile approach to the design and implementation.
+
+
+
+
+Our Simulation Application
+
+
+The previous section was a fluffy overview of what we’re trying to accomplish. It sets some goals and provides a detailed context for who’s using this application and why.
+
+Armed with that information, we can look at the simulation application we’re going to write.
+
+Our simulation application will allow a programmer to experiment with different casino game betting strategies. We’ll build a simple, command-line simulator that provides a reliable, accurate model of the game. We need to be able to easily pick one of a variety of player betting strategies, play a number of simulated rounds of the game, and produce a statistical summary of the results of that betting strategy.
+
+This leads us to a small essential use case. There is a single actor, the “investigator”. The actor’s goal is to see the expected results of using a particular strategy for a particular game. The typical scenario is the following.
+
+
+Essential Use Case
+
+Actor. Specifies which game and betting strategy to test.
+
+The game may require additional parameters, like betting limits.
+
+The strategy may need additional parameters, like an initial budget, or stake.
+
+
+
+System. Responds with a statistical summary of the outcomes after a fixed number of cycles (spins, or throws or hands). The number of cycles needs to be small (on the order of 200, to reflect only a few hours of play).
+
+
+
+
+
+On Simplicity. Yes, this use case is very simple. It’s a command-line application: it’s supposed to be simple.
+
+The point is to explore OO design, not development of a fancy GUI or web application.
+
+Simplicity is a virtue. We can add a fancy GUI or web presentation of the results later. First, create some results.
+
+
+
+
+
+Soapbox on Use Cases
+
+
+We feel that the use case technique is abused by some IT organizations. Quoting from [Jacobson95]. “A use case is a sequence of transactions in a system whose task is to yield a result of measurable value to an individual actor of the system.”
+
+A use case will clearly identify an actor, define the value created, and define a sequence of transactions. A use case will be a kind of system test specification. A use case will define the system’s behavior, and define why an actor bothers to interact with it.
+
+Use cases are often simplified to user stories: “As a <role>, I need <feature> so that <business value>”.
+
+A use case is not a specification, and does not replace ordinary design. We have had experiences with customers who simply retitle their traditional procedural programming specifications as “use cases”. We hypothesize that this comes from an unwillingness to separate problem definition from solution definition. The consequence is a conflation of use case, technical background, design and programming specifications into gargantuan documents that defy the ability of programmers or users to comprehend them.
+
+There are a number of common problems with use cases that will make the design job more difficult. Each of these defects should lead to review of the use case with the authors to see what, if anything, they can do to rework the use case to be more complete.
+
+No Actor. Without an actor, it’s impossible to tell who is getting value from the interaction. A catch-all title like “the user” indicates that the use case is written from the point of view of a database or the application software, not an actual person.
+
+An actor can be an interface with other software, in which case, the actual software needs to be named. Without knowing the actor, we have trouble deciding which classes are clients and which classes provide the lower-level services of the application.
+
+
+
+No Value Proposition. There are two basic kinds of value: information for decision-making or actions taken as the result of decision-making. People interact with software because there are decisions the software cannot make or there are actions the actor cannot take. Some use cases include value-less activities like logging in, or committing a transaction, or clicking “Okay” to continue. These are parts of operating scenarios, not statements of value that show how the actor is happier or more successful. Without a value proposition, we have no clue as to what problem the software solves, or what it eventually does for the actor.
+
+
+
+No Interactions. If the entire body of the use case is a series of steps the application performs, we are suspicious of the focus. We prefer a use case to emphasize interaction with the actor. Complex algorithms or interface specifications should be part of an appendix or supplemental document. Without any interaction, it isn’t clear how the actor uses the software.
+
+
+
+
+
+We also try to make a distinction between detailed operating scenarios and use cases. We have seen customers write documents they call “detailed use cases” that describe the behavior of individual graphical user interface widgets or panels. We prefer to call these scenarios, since they don’t describe measurable business value, but instead describe technical interactions.
+
+
+
+
+
+Solution Approach
+
+
+From reading the problem and use case information, we can identify at least the following four general elements to our application.
+
+The game being simulated. This includes the various elements of the game: the wheel, the dice, the cards, the table, and the bets.
+
+The player being simulated. This includes the various decisions the player makes based on the state of the game, and the various rules of the betting system the player is following.
+
+The statistics being collected.
+
+An overall control component which processes the game, collects the statistics, and writes the details or the final summary.
+
+
+
+When we look at common design patterns, the Model-View-Control pattern often helps to structure applications. A more sophisticated, transactional application may require a more complex structure. However, in this case, the game, the player, and the statistics are the model. The command line selection of player and the reporting of raw data is the view. A control component creates the various objects to execute the simulation and write the results.
+
+While interesting, we will not pursue the design of a general-purpose simulation framework. Nor will we use any of the available general frameworks. While these are handy and powerful tools, we want to focus on developing application software “from scratch” (or de novo) as a learning exercise.
+
+Our solution will depend heavily on desktop integration: the actor will use their IDE to create a strategy and build a new version of the application program. Once the application is built, the actor can run the application from the command line, collecting the output file. The statistical results file can be analyzed using a spreadsheet application. There are at least three separate application programs involved: the IDE (including editor and compiler), the simulator, the spreadsheet used for analysis.
+
+A typical execution of the simulator will look like the following example.
+
+
+Sample Execution
+
+python3 -m casino.craps --Dplayer.name="Player1326" >details.log
+
+
+
+
+
+We select the main simulator control using the package casino and the module craps.
+
+We define the player to use, player.name="Player1326". The main method will use this parameter to create objects and execute the simulation.
+
+We collect the raw data in a file named details.log.
+
+
+
+We are intentionally limiting our approach to a simple command-line application using the default language libraries.
+
+There are a number of more technical considerations that we will expand in Deliverables. These include the use of an overall application framework and an approach for unit testing.
+
+Among the topics this book deals with in a casual – possibly misleading – manner are probability and statitics. Experts will spot a number of gaps in our exposition. For example, there isn’t a compelling need for simulation of the simpler games of Craps and Roulette, since they can be completely analyzed. However, our primary objective is to study programming, not casino games, therefore we don’t mind solving known problems again. We are aware that our statistical analysis has a number of deficiencies. We will avoid any deeper investigation into statistics.
+
+
+
+
+Methodology, Technique and Process
+
+
+We want to focus on technical skills; we won’t follow any particular software development methodology too closely. We prefer to lift up a few techniques which have a great deal of benefit.
+
+Incremental Development. Each chapter is a “sprint” that produces some collection of deliverables. Each part is a complete release.
+
+Unit Testing. We don’t dwell on test-driven development, but each chapter explicitly requires unit tests for the classes built. Ideally, one writes the test cases first.
+
+Embedded Documentation. We provide appendices on how to use Sphinx or epydoc to create usable API documents.
+
+
+
+The exercises are presented as if we are doing a kind of iterative design with small deliverables. We present the exercises like this for a number of reasons.
+
+We find design is helped by immediate feedback. While we present the design in considerable detail, we do not present the final code. Programmers new to OO design will benefit from repeated exposure to the transformation of problem statement through design to code.
+
+This presentation parallels the way software is developed. A project may emphasize larger collections of deliverables. However, the actual creation of working eventually decomposes into classes, fields and methods.
+
+
+
+For developers enamored of a strict waterfall methodology – with all design work completed before any programming work – the book can be read in a slightly different order. From each exercise chapter, read only the overview and design sections. From that information, integrate the complete design. Then proceed through the deliverables sections of each chapter, removing duplicates and building only the final form of the deliverables based on the complete design.
+
+This will show how design rework arises as part of a waterfall methodology. It will show that rework doesn’t go away with a Big Design Up Front (BDUF) approach. The rework is merely shifted around a bit.
+
+
+
+
+
+Making Technical Decisions
+
+
+Many of the chapters will include some lengthy design decisions that appear to be little more than hand-wringning over nuances. We need to emphasize our technique for doing appropriate hand-wringing over OO design. We call it “Looking For The Big Simple”, and find that managers don’t often permit the careful enumeration of all the alternatives and the itemization of the pros and cons of each choice.
+
+We have worked with managers who capriciously play their “schedule” or “budget” trump cards, stopping useful discussion of alternatives. This may stem from a fundamental discomfort with the technology, and a consequent discomfort of appearing lost in front of team members and direct reports.
+
+Our suggestion in this book can be summarized as follows:
+
+Important
+
+Good Design
+
+Good OO design comes from a good process for technical decision-making.
+
+First, admit what we don’t know, and then take steps to reduce our degrees of ignorance.
+
+A phrase like “work smarter not harder” is useless because it doesn’t provide the time and budget to actually get smarter.
+
+The learning process, as with all things, must be managed. This means there must be time budgeted for exploring the bad designs before arriving at a good design.
+
+A little more time spent on design can result in considerable simplification, which will reduce overall development and maintenance costs.
+
+
+
+It’s also important to note that no one in the real world is omniscient. Some of the exercises include intentional dead-ends. As a practical matter, we can rarely foresee all of the consequences of a design decision.
+
+
+
+
+
+Additional Topics: Non-Functional Requirements
+
+
+We can decompose software requirements into two broad categories. The Functional Requirements are the things the software must do; the use cases should address this completely. The Non-Functional Requirements are all of the supporting ideals and principles that make good software. The number of non-functional features of software is large. We’ll talk about a few of them, specifically:
+
+Quality, in general
+
+Rework
+
+Reuse
+
+Design Patterns
+
+
+
+
+
+On Quality
+
+
+Our approach to overall quality assurance is relatively simple. We feel that a focus on unit testing and documetation covers most of the generally accepted quality factors. The Software Engineering Institute (SEI) published a quality measures taxonomy. While officially “legacy”, it still provides an exhaustive list of quality attributes. These are broadly grouped into five categories. Our approach covers most of those five categories reasonably well.
+
+Need Satisfaction. Does the software meet the need? We start with a problem statement, define the use case, and then write software which is narrowly focused on the actor’s needs. By developing our application in small increments, we can ask ourself at each step, “Does this meet the actor’s needs?” It’s fairly easy to keep a software development project focused when we have use cases to describe our goals.
+
+
+
+Performance. We don’t address this specifically in this book. However, the presence of extensive unit tests allows us to alter the implemention of classes to change the overall performance of our application. As long as the resulting class still passes the unit tests, we can develop numerous alternative implementations to optimize speed, memory use, input/output, or any other resource.
+
+
+
+Maintenance. Software is something that is frequently changed. It changes when we uncover bugs. More commonly, it changes when our understanding of the problem, the actor or the use case changes. In many cases, our initial solution merely clarifies the actor’s thinking, and we have to alter the software to reflect a deeper understanding of the problem.
+
+Maintenance is just another cycle of the iterative approach we’ve chosen in this book. We pick a feature, create or modify classes, and then create or modify the unit tests. In the case of bug fixing, we often add unit tests to demonstrate the bug, and then fix our classes to pass the revised unit tests.
+
+
+
+Adaptation. Adaptation refers to our need to adapt our software to changes in the environment. The environment includes interfaces, the operating system or platform, even the number of users is part of the environment. When we address issues of interoperability with other software, portability to new operating systems, scalability for more users, we are addressing adaptation issues.
+
+We chose Python to avoid having interoperability and portability issues; this language give admirable support for many scalability issues. Generally, a well-written piece of software can be reused. While this book doesn’t focus on reuse, Python is biased toward writing reusable software.
+
+
+
+Organizational. There are some organizational quality factors: cost of ownership and productivity of the developers creating it. We don’t address these directly. Our approach, however, of developing software incrementally often leads to good developer productivity.
+
+
+
+
+
+Our approach (Incremental, Unit Testing, Embedded Documentation) assures high quality in four of the five quality areas. Incremental development is a way to focus on need satisfaction. Unit testing helps us optimize resource use, and do maintenance well. Our choices of tools and platforms help us address adaptation.
+
+The organizational impact of these techniques isn’t so clear. It is easy to mis-manage a team and turn incremental development into a quagmire of too much planning for too little delivered software. It is all too common to declare that the effort spent writing unit test code is “wasted”.
+
+Ultimately, this is a book on OO design. How people organize themselves to build software is beyond our scope.
+
+
+
+
+On Rework
+
+
+In Problem Statement, we described the problem. In Solution Approach, we provided an overview of the solution. The following parts will guide you through an incremental design process; a process that involves learning and exploring. This means that we will coach you to build classes and then modify those classes based on lessons learned during later steps in the design process. See our Soapbox on Rework for an opinion on the absolute necessity for design rework.
+
+We don’t simply present a completed design. We feel that it is very important follow a realistic problem-solving trajectory so that beginning designers are exposed to the decisions involved in creating a complete design. In our experience, all problems involve a considerable amount of “learn as you go”.
+
+We want to reflect this in our series of exercises. In many respects, a successful OO design is one that respects the degrees of ignorance that people have when starting to build software. We will try to present the exercises in a way that teaches the reader how to manage ignorance and still develop valuable software.
+
+Soapbox on Rework
+
+Important
+
+The best way to learn is to make mistakes.
+
+Rework is a consequence of learning.
+
+
+
+All of software development can be described as various forms of knowledge capture. A project begins with many kinds of ignorance and takes steps to reduce that ignorance. Some of those steps should involve revising or consolidating previous learnings.
+
+A project without rework is suspiciously under-engineered.
+
+
+
+For some, the word rework has a negative connotation. If you find the word distasteful, please replace every occurance with any of the synonyms: adaptation, evolution, enhancement, mutation. We prefer the slightly negative connotation of the word rework because it helps managers realize the importance of incremental learning and how it changes the requirements, the design and the resulting software.
+
+Since learning will involve mistakes, good management plans for the costs and risks of those mistakes. Generally, our approach is to manage our ignorance; we try to create a design such that correcting a mistake only fixes a few classes.
+
+We often observe denial of the amount of ignorance involved in creating IT solutions. It is sometimes very difficult to make it clear that if the problem was well-understood, or the solution was well-defined there would be immediately applicable off-the-shelf or open-source solutions. The absence of a ready-to-hand solution generally means the problem is hard. It also means that there are several degrees of ignorance: ignorance of the problem, solution and technology; not to mention ignorance of the amount of ignorance involved in each of these areas.
+
+We see a number of consequences of denying the degrees of ignorance.
+
+Programmers. For programmers, experienced in non-OO (e.g. procedural) environments, one consequnece is that they find learning OO design is difficult and frustrating. Our advice is that since this is new, you have to make mistakes or you won’t learn effectively. Allow yourself to explore and make mistakes; feel free to rework your solutions to make them better. Above all, do not attempt to design a solution that is complete and perfect the very first time. We can’t emphasize enough the need to do design many times before understanding what is important and what is not important in coping with ignorance.
+
+Managers. For managers, experienced in non-object implementation, the design rework appears to be contrary to a fanciful expectation of reduced development effort from OO techniques. The usual form for the complaint is the following: “I thought that OO design was supposed to be easier than non-OO design.” We’re not sure where the expectation originates, but good design takes time, and learning to do good design seems to require making mistakes. Every project needs a budget for making the necessary mistakes, reworking bad ideas to make them good and searching for simplifications.
+
+Economics. Often, management attempts the false economy of attempting to minimize rework by resorting to a waterfall methodology. The idea is that having the design complete before attempting to do any development somehow magically prevents design rework. We don’t see that this waterfall approach minimizes rework; rather, we see it shifting the rework forward in the process. There are two issues ignored by this approach: how we grow to understand the problem domain and providing an appropriate level of design detail.
+
+
+
+We find that any initial “high-level” design can miss details of the problem domain, and this leads to rework. Forbidding rework amounts to mandating a full understanding of the problem prior to any code.
+
+In most cases, our users do not fully understand their problem any more than our developers understand our users. Generally, it is very hard to understand the problem, the technology, and the solution. We find that hands-on use of preliminary versions of software can help more than endless conversations about what could be built.
+
+There was a time when programming languages were so primitive that deep, detailed design was required. In a language that lacks the built-in collection classes, a great deal of design was required just to introduce the collections required to do useful work.
+
+Because Python comes with so many features built in, it’s often more efficient to write a draft version of a class in Python than it is to write an elaborate design document prior to writing a preliminary draft.
+
+War Story on Bad Design
+
+In one advanced programming course, we observed the following sad scenario. The instructor provided an excellent background in how to create abstract data type (ADT) definitions for the purely mathematical objects of scalar, vector and matrix. The idea was to leverage the ADTs to implement more complex operations like matrix multiplication, inversion and Gaussian elimination. The audience, primarily engineers, seemed to understand how this applied to things they did every day. The first solution, presented after a week of work, began with the following statement: “Rather than think it through from the basic definitions of matrix and vector, I looked around in my drawer and found an old FORTRAN program and rewrote that, basically transliterating the FORTRAN.” We think that a lack of experience in the process of software design makes it seem that copying an inappropriate solution is more effective than designing a good solution from scratch.
+
+
+
+
+
+On Reuse
+
+
+While there is a great deal of commonality among the three games, the exercises do not start with an emphasis on constructing a general framework. We find that too much generalization and too much emphasis on reuse is not appropriate for beginning object designers. See Soapbox on Reuse for an opinion on reuse.
+
+Additionally, we find that projects that begin with too-lofty reuse goals often fail to deliver valuable solutions in a timely fashion. We prefer not to start out with a goal that amounts to boiling the ocean to make a pot of tea.
+
+Soapbox on Reuse
+
+While a promise of OO design is reuse, this needs to be tempered with some pragmatic considerations. There are two important areas of reuse: reusing a class specification to create objects with common structure and behavior, and using inheritance to reuse structure and behavior among multiple classes of objects. Beyond these two areas, reuse can create more cost than value.
+
+The first step in reuse comes from isolating responsibilities to create classes of objects. Generally, a number of objects that have common structure and behavior is a kind of reuse. When these objects cooperate to achieve the desired results, this is sometimes called emergent behavior: no single class contains the overall functionality, it grew from the interactions among the various objects.
+
+This is sometimes called inversion of control.
+
+When the application grows and evolves, we can preserve some class declarations, reusing them in the next revision of the application. This reduces the cost and risks associated with software change. Class definitions are the most fundamental and valuable kind of reuse.
+
+Another vehicle for OO resuse is inheritance. The simple subclass-superclass relationship yields a form of reuse; a class hierarchy with six subclasses will share the superclass code seven times over. This, by itself, has tremendous benefits.
+
+We caution against any larger scope of reuse. Sharing classes between projects may or may not work out well. The complexity of achieving inter-project reuse can be paralyzing to first-time designers. Often, different projects reflect different points of view, and the amount of sharing is limited by these points of view.
+
+As an example, consider a product in a business context. An external customer’s view of the product (shaped by sales and marketing) may be very different from the internal views of the same product. Internal views of the product (for example, finance, legal, manufacturing, shipping, support) may be very different from each other. Reconciling these views may be far more challenging than a single software development project. For that reason, we don’t encourage this broader view of reuse.
+
+
+
+
+
+On Design Patterns
+
+
+These exercises will refer to several of the “Gang of Four” design patterns in [Gamma95]. The Design Patterns book is not a prerequisite; we use it as reference material to provide additional insight into the design patterns used here. We feel that use of common design patterns significantly expands the programmer’s repertoire of techniques. We note where they are appropriate, and provide some guidance in their implementation.
+
+In addition, we reference several other design patterns which are not as well documented. These are, in some cases, patterns of bad design more than patterns of good design.
+
+
+
+
+
+Deliverables
+
+
+Each chapter defines the classes to be built and the unit testing that is expected. A third category of deliverable – documentation – is merely implied.
+
+The purpose of each chapter is to write the source files for one or more classes, the source files for one or more unit tests, and assure that a minimal set of API documentation is available.
+
+Source Files. The source files are the most important deliverable. In effect, this is the working application program. Generally, we will be running this application from within the Integrated Development Environment (IDE). We can, of course, create a stand-alone program.
+
+In the case of Python, the “program” is simply the packages of .py files. There really isn’t much more to deliver. The interested student might want to look at the Python distutils and setuptools to create a distribution kit, or possibly a Python .egg file.
+
+
+
+Unit Test Files. The deliverables section of each chapter summarizes the unit testing that is expected, in addition to the classes to be built. We feel that unit testing is a critical skill, and emphasize it throughout the inividual exercises. We don’t endorse a particular technology for implementing the unit tests. There are several approaches to unit testing that are in common use.
+
+For formal testing of some class, X, we create a separate class, TestX, which creates instances of X and exercises those instances to be sure they work. The unittest package is the mechanism for doing formal unit tests. Additionally, many Python developers also use the doctest module to assure that the sample code in the docstrings is actually correct. We cover these technologies in the appendices.
+
+
+
+Documentation. The job isn’t over until the paperwork is done. The internal documentation is generally built from specially formatted blocks of comments within the source itself. We can use Epydoc (or sphinx) to create documentation based on the code.
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Roulette Details
+
+
+We’ll start out by looking a the game of Roulette in Roulette Game. This will focus on Roulette as played in most American casinos.
+
+We will follow this with Available Bets in Roulette. There are a profusion of bets available in Roulette. Most of the sophisticated betting strategies focus on just one of the even-money bets.
+
+In Some Betting Strategies, we will describe some common betting strategies that we will simulate. The betting strategies are interesting and moderately complex algorithms for changing the amount that is used for each bet in an attempt to recoup losses.
+
+We’ll also include some additional topics in Roulette Details Questions and Answers.
+
+
+
+
+
+Roulette Game
+
+
+The game of Roulette centers around a wheel with thirty-eight numbered bins. The numbers include 0, 00 (double zero), 1 through 36. The table has a surface marked with spaces on which players can place bets. The spaces include the 38 numbers, plus a variety of additional bets, which will be detailed below.
+
+After the bets are placed by the players, the wheel is spun by the house, a small ball is dropped into the spinning wheel; when the wheel stops spinning, the ball will come to rest in one of the thirty-eight numbered bins, defining the winning number. The winning number and all of the related winning bets are paid off; the losing bets are collected. Roulette bets are all paid off using odds, which will be detailed with each of the bets, below.
+
+The numbers from 1 to 36 are colored red and black in an arbitrary pattern. They fit into various ranges, as well as being even or odd, which defines many of the winning bets related to a given number. The numbers 0 and 00 are colored green, they fit into none of the ranges, and are considered to be neither even nor odd. There are relatively few bets related to the zeroes. The geometry of the betting locations on the table defines the relationships between number bets: a group of numbers is given a colorful names like a street or a corner.
+
+Note
+
+American Rules
+
+There are slight variations in Roulette between American and European casinos. We’ll focus strictly on the American version.
+
+
+
+
+
+Available Bets in Roulette
+
+
+There are a variety of bets available on the Roulette table. Each bet has a payout, which is stated as where is the multiplier that defines the amount won based on the amount bet.
+
+A $5 bet at 2:1 will win $10. After you are paid, there will be $15 sitting on the table, your original $5 bet, plus your $10 additional winnings.
+
+Note
+
+Odds
+
+Not all games state their odds using this convention. Some games state the odds as “2 for 1”. This means that the total left on the table after the bets are paid will be two times the original bet. So a $5 bet will win $5, there will be $10 sitting on the table.
+
+
+
+Here’s the layout of the betting area on a Roulette table.
+
+Roulette Table Layout
+
+
+
+The table is divided into two classes of bets. The “inside” bets are the 38 numbers and small groups of numbers; these bets all have relatively high odds. The “outside” bets are large groups of numbers, and have relatively low odds. If you are new to casino gambling, see Odds and Payouts for more information on odds and why they are offered.
+
+A “straight bet” is a bet on a single number. There are 38 possible bets, and they pay odds of 35 to 1. Each bin on the wheel pays one of the straight bets.
+
+A “split bet” is a bet on an adjacent pair of numbers. It pays 17:1. The table layout has the numbers arranged sequentially in three columns and twelve rows. Adjacent numbers are in the same row or column. The number 5 is adjacent to 4, 6, 2, 8; the number 1 is adjacent to 2 and 4. There are 114 of these split bet combinations. Each bin on the wheel pays from two to four of the available split bets. If the balls lands in either of two bins, the split bet is a winner.
+
+A “street bet” includes the three numbers in a single row, which pays 11:1. There are twelve of these bets on the table. Any of three bins make a street bet a winner.
+
+A square of four numbers is called a “corner bet” and pays 8:1. There are 22 of these bets available.
+
+At one end of the layout, it is possible to place a bet on the Five numbers 0, 00, 1, 2 and 3. This pays 6:1. It is the only combination bet that includes 0 or 00.
+
+A “line bet” is a six number block, which pays 5:1. It is essentially two adjacent street bets. There are 11 such combinations.
+
+
+
+The following bets are the “outside” bets. Each of these involves a group of twelve to eighteen related numbers. None of these outside bets includes 0 or 00. The only way to bet on 0 or 00 is to place a straight bet on the number itself, or use the five-number combination bet.
+
+Any of the three 12-number ranges (1-12, 13-24, 25-36) pays 2:1. There are just three of these bets.
+
+The layout offers the three 12-number columns at 2:1 odds. All of the numbers in a given column have the same remainder when divided by three. Column 1 contains 1, 4, 7, etc., all of which have a remainder of 1 when divided by 3.
+
+There are two 18-number ranges: 1-18 is called low, 19-36 is called high. These are called even money bets because they pay at 1:1 odds.
+
+The individual numbers are colored red or black in an arbitrary pattern. Note that 0 and 00 are colored green. The bets on red or black are even money bets, which pay at 1:1 odds.
+
+The numbers (other than 0 and 00) are also either even or odd. These bets are also even money bets.
+
+
+
+Odds and Payouts
+
+Not all of the Roulette outcomes are equal probability. Let’s compare a “split bet” on 1-2 and a even money bet on red.
+
+The split bet wins if either 1 or 2 comes up on the wheel. This is 2 of the 38 outcomes, or a 1/19 probability, 5.26%.
+
+The red bet wins if any of the 18 red numbers come up on the wheel. The is 18 of the 38 outcomes, or a 9/19 probability, 47.4%.
+
+
+
+Clearly, the red bet is going to win almost ten times more often than the 1-2 bet. As an inducement to place bets on rare occurences, the house offers a higher payout on those bets. Since the 1-2 split bet wins is so rarely, they will pay you 17 times what you bet. On the other hand, since the red bet wins so frequently, they will only pay back what you bet.
+
+You’ll notice that the odds of winning the 1-2 split bet is 1 chance in 19, but they pay you 17 times your bet. Since your bet is still sitting on the table, it looks like 18 times your bet. It still isn’t 19 times your bet. This discrepency between the actual probability and the payout odds is sometimes called the house edge. It varies widely among the various bets in the game of Roulette. For example, the 5-way bet has 5/38 ways of winning, but pays only 6:1. There is only a 13.2% chance of winning, but they pay you as if you had a 16.7% chance, keeping the 3.5% difference. You have a 5.26% chance to win a split bet, but the house pays as if it were a 5.88% chance, a .62% discrepency in the odds.
+
+The smallest discrepency between actual chances of winning (47.4%) and the payout odds (50%) is available on the even money bets: red, black, even, odd, high or low. All the betting systems that we will look at focus on these bets alone, since the house edge is the smallest.
+
+
+
+
+
+Some Betting Strategies
+
+
+Perhaps because Roulette is a relatively simple game, elaborate betting systems have evolved around it. Searches on the Internet turn up a many copies of the same basic descriptions for a number of betting systems. Our purpose is not to uncover the actual history of these systems, but to exploit them for simple OO design exercises. Feel free to research additional betting systems or invent your own.
+
+Martingale. The Martingale system starts with a base wagering amount, w, and a count of the number of losses, c, initially 0. Each loss doubles the bet.
+
+Any given spin will place an amount of on a 1:1 proposition (for example, red). When a bet wins, the loss count is reset to zero; resetting the bet to the base amount, w. This assures that a single win will recoup all losses.
+
+Note that the casinos effectively prevent successful use of this system by imposing a table limit. At a $10 Roulette table, the limit may be as low as $1,000. A Martingale bettor who lost six times in a row would be facing a $640 bet, and after the seventh loss, their next bet would exceed the table limit. At that point, the player is unable to recoup all of their losses. Seven losses in a row is only a 1 in 128 probability; making this a relatively likely situation.
+
+Waiting. Another system is to wait until some number of losses have elapsed. For example, wait until the wheel has spun seven reds in a row, and then bet on black. This can be combined with the Martingale system to double the bet on each loss as well as waiting for seven reds before betting on black.
+
+This “wait for a favorable state” strategy is based on a confusion between the outcome of each individual spin and the overall odds of given collections of spins. If the wheel has spun seven reds in a row, it’s “due” to spin black.
+
+1-3-2-6 System. Another betting system is called the 1-3-2-6 system. The idea is to avoid the doubling of the bet at each loss and running into the table limit. Rather than attempt to recoup all losses in a single win, this system looks to recoup all losses by waiting for four wins in a row.
+
+The sequence of numbers (1, 3, 2 and 6) are the multipliers to use when placing bets after winning. At each loss, the sequence resets to the multiplier of 1. At each win, the multiplier is advanced through the sequence. After one win, the bet is now . After a second win, the bet is reduced to , and the winnings of are “taken down” or removed from play. In the event of a third win, the bet is advanced to . Should there be a fourth win, the player has doubled their money, and the sequence resets.
+
+Cancellation. Another method for tracking the lost bets is called the Cancellation system or the Labouchere system. The player starts with a betting budget allocated as a series of numbers. The usual example is 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+Each bet is sum of the first and last numbers in the last. In this case 1+9 is 10. At a win, cancel the two numbers used to make the bet. In the event of all the numbers being cancelled, reset the sequence of numbers and start again. For each loss, however, add the amount of the bet to the end of the sequence as a loss to be recouped.
+
+Here’s an example of the cancellation system using 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+Bet 1+9. A win. Cancel 1 and 9, leaving 2, 3, 4, 5, 6, 7, 8.
+
+Bet 2+8. A loss. Add 10, leaving 2, 3, 4, 5, 6, 7, 8, 10.
+
+Bet 2+10. A loss. Add 12, leaving 2, 3, 4, 5, 6, 7, 8, 10, 12.
+
+Bet 2+12. A win. Cancel 2 and 12, leaving 3, 4, 5, 6, 7, 8, 10.
+
+Next bet will be 3+10.
+
+
+
+A player could use the Fibonacci Sequence to structure a series of bets in a kind of cancellation system. The Fibonacci Sequence is 1, 1, 2, 3, 5, 8, 13, ...
+
+At each loss, the sum of the previous two bets – the next numbers in the sequence – becomes the new bet amount. In the event of a win, we simply revert to the base betting amount. This allows the player to easily track our accumulated losses, with bets that could recoup those losses through a series of wins.
+
+
+
+
+Roulette Details Questions and Answers
+
+
+Do the house limits really have an impact on play?
+
+Of course they do, or the house wouldn’t impose them.
+
+Many betting strategies increase bets on a loss, in an effort to break even or get slightly ahead. How many losses can occur in a row?
+
+The answer is “indefinite.” The odds of a long series of losses get less and less probable, but it never becomes zero.
+
+For a simple event – like flipping a coin – we can often see three heads in a row. One head is . Two heads is . If we partition a sequence of coin tosses into pairs, we expect that 1 of 4 pairs will have two heads.
+
+Three heads is . If we partition a sequence of coin tosses into threes, we expect that 1 of 8 triples will have three heads.
+
+A table limit that’s 30 times the base bet, say $300 at a $10 table, is a way of capping play at an event has a . Three percent is the odds of seeing five heads in a row. If we double the bet on each loss, we’d only need to see five losses in a row to reach the table limit.
+
+This three percent limit is in line with our ways the house maintains an edge in each game.
+
+
+
+
+
+Why are there so many bets in Roulette?
+
+This is a universal feature of gambling. A lot of different kinds of bets allows a player to imagine that one of those bets is better than the others.
+
+In Blackjack, for example, there’s essentially one bet. However, casinos have added a few additional bets. It doesn’t reach the complexity of Roulette or Craps, but there are a number of betting opportunities even in Blackjack.
+
+Many of the betting strategies leverage the simplest of bets: a nearly even-money proposition like red, black, even, odd, high, or low. These are easy to analyze because they’re (nearly) and the cost of a series of losses or a series of wins is easy to compute.
+
+When we look at Craps, the core bet – the “pass line” – is also nearly , allowing the use of similar betting strategies.
+
+The idea of the various betting strategies, then, is to avoid all of the complexity and focus on just a simple bet. For the most part, our Player implementations can follow this approach.
+
+However, if we implement the complete game, we can write Players that make a number of different kinds of bets to see how the house edge breaks the various betting strategies.
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Roulette Solution Overview
+
+
+The first section, Preliminary Survey of Classes, is a survey of the classes gleaned from the general problem statement. Refer to Problem Statement as well as the problem details in Roulette Details. This survey is drawn from a quick overview of the key nouns in these sections.
+
+We’ll amplify this survery with some details of the class definitions in Preliminary Roulette Class Structure.
+
+Given this preliminary of the candidate classes, A Walkthrough of Roulette is a walkthrough of the possible design that will refine the definitions, and give us some assurance that we have a reasonable architecture. We will make some changes to the preliminary class list, revising and expanding on our survey.
+
+We will also include a number of questions and answers in Roulette Solution Questions and Answers. This should help clarify the design presentation and set the stage for the various development exercises in the chapters that follow.
+
+
+
+
+
+Preliminary Survey of Classes
+
+
+To provide a starting point for the development effort, we have to identify the objects and define their responsibilities. The central principle behind the allocation of responsibility is encapsulation; we do this by attempting to isolate the information or isolate the processing that must be done. Encapsulation assures that the methods of a class are the exclusive users of the fields of that class. It also makes each class very loosely coupled with other classes; this permits change without a ripple through the application.
+
+For example, a class for each Outcome defines objecgs which can contain both the name and the payout odds. That way each Outcome instance can be used to compute a winning amount, and no other element of the simulation needs to share the odds information or the payout calculation.
+
+In reading the background information and the problem statement, we noticed a number of nouns that seemed to be important parts of the game we are simulating.
+
+Wheel
+
+Bet
+
+Bin
+
+Table
+
+Red
+
+Black
+
+Green
+
+Number
+
+Odds
+
+Player
+
+House
+
+
+
+One common development milestone is to be able to develop a class model in the Unified Modeling Language (UML) to describe the relationships among the various nouns in the problem statement. Building (and interpreting) this model takes some experience with OO programming. In this first part, we’ll avoid doing extensive modeling. Instead we’ll simply identify some basic design principles. We’ll focus in on the most important of these nouns and describe the kinds of classes that you will build.
+
+In a few cases, we will look forward to anticipate some future considerations. One such consideration is the house rake, also known as the vigorish, vig, or commission. In some games, the house makes a 5% deduction from some payouts. This complexity is best isolated in the Outcome class. Roulette doesn’t have any need for a rake, since the presence of the 0 and 00 on the wheel gives the house a little over 5% edge on each bet. We’ll design our class so that this can be added later when we implement Craps.
+
+
+
+
+
+Preliminary Roulette Class Structure
+
+
+We’ll summarize some of the classes and responsibilities that we can identify from the problem statement. This is not the complete list of classes we need to build. As we work through the exercises, we’ll discover additional classes and rework some of these preliminary classes more than once.
+
+We’ll describe each class with respect to the responsibility allocated to the class and the collaborators. Some collabotors are used by an object to get work done. We have a number of “uses-used by” collaborative relationships among our various classes.
+
+Outcome: Responsibilities.
+
+A name for the bet and the payout odds. This isolates the calculation of the payout amount. Example: “Red”, “1:1”.
+
+Collaborators.
+
+Collected by Wheel into the bins that reflect the bets that win; collected by Table into the available bets for the Player; used by Game to compute the amount won from the amount that was bet.
+
+
+
+Wheel: Responsibilities.
+
+Selects the Outcome s that win. This isolates the use of a random number generator to select Outcomes; and it encapsulates the set of winning Outcomes that are associated with each individual number on the wheel. Example: the “1” bin has the following winning Outcomes: “1”, “Red”, “Odd”, “Low”, “Column 1”, “Dozen 1-12”, “Split 1-2”, “Split 1-4”, “Street 1-2-3”, “Corner 1-2-4-5”, “Five Bet”, “Line 1-2-3-4-5-6”, “00-0-1-2-3”, “Dozen 1”, “Low” and “Column 1”.
+
+Collaborators.
+
+Collects the Outcomes into bins; used by the overall Game to get a next set of winning Outcomes.
+
+
+
+Table: Responsibilities.
+
+A collection of bets placed on Outcomes by a Player. This isolates the set of possible bets and the management of the amounts currently at risk on each bet. This also serves as the interface between the Player and the other elements of the game.
+
+Collaborators.
+
+Collects the Outcomes; used by Player to place a bet amount on a specific Outcome; used by Game to compute the amount won from the amount that was bet.
+
+
+
+Player: Responsibilities.
+
+Places bets on Outcomes, updates the stake with amounts won and lost.
+
+Collaborators.
+
+Uses Table to place bets on Outcomes; used by Game to record wins and losses.
+
+
+
+Game: Responsibilities.
+
+Runs the game: gets bets from Player, spins Wheel, collects losing bets, pays winning bets. This encapsulates the basic sequence of play into a single class.
+
+Collaborators.
+
+Uses Wheel, Table, Outcome, Player. The overall statistical analysis will play a finite number of games and collect the final value of the Player‘s stake.
+
+
+
+The class Player has the most important responsibility in the application, since we expect to update the algorithms this class uses to place different kinds of bets. Clearly, we need to cleanly encapsulate the Player, so that changes to this class have no ripple effect in other classes of the application.
+
+
+
+
+
+A Walkthrough of Roulette
+
+
+A good preliminary task is to review these responsibilities to confirm that a complete cycle of play is possible. This will help provide some design details for each class. It will also provide some insight into classes that may be missing from this overview.
+
+A good way to structure this task is to do a Class-Reponsibility-Collaborators (CRC) walkthrough.
+
+As preparation, get some 5” x 8” notecards. On each card, write down the name of a class, the responsibilities and the collaborators. Leave plenty of room around the responsibilities and collaborators to write notes. We’ve only identified five classes, so far, but others always show up during the walkthrough.
+
+During the walkthrough, we identify areas of responsibility, allocate them to classes of objects and define any collaborating objects. An area of responsibility is a thing to do, a piece of information, a result. Sometimes a big piece of responsibility can be broken down into smaller pieces, and those smaller pieces assigned to other classes. There are a lot of reasons for decomposing, the purpose of this book is to explore many of them in depth. Therefore, we won’t justify any of our suggestions until later in the book. For now, follow along closely to get a sense of where the exercises will be leading.
+
+The basic processing outline is the responsibility of the Game class. To start, locate the Game card.
+
+Our preliminary note was that this class “Runs the game.” The responsibilities section has a summary of four steps involved in running the game.
+
+
+
+The first step is “gets bets from Player.” Find the Player card.
+
+
+
+Does a Player collaborate with a Game to place bets? If not, update the cards as necessary to include this.
+
+
+
+One of the responsibilities of a Player is to place bets. The step in the responsibility statement is merely “Places bets on Outcomes.” Looking at the classes, we note that the Table contains the amounts placed on the Bets. Fix the collaboration information on the Player to name the Table class. Find the Table card.
+
+
+
+Does a Table collaborate with a Player to accept the bets? If not, update the cards as necessary to include this.
+
+
+
+What card has responsibility for the amount of the bet? It looks like Table. We note one small problem: the Table contains the collection of amounts bet on Outcomes.
+
+What class contains the individual “amount bet on an Outcome?” This class appears to be missing. We’ll call this new class Bet and start a new card. We know one responsibility is to hold the amount bet on a particular Outcome.
+
+We know three collaborators: the amount is paired with an Outcome, all of the Bet s are collected by a Table, and the Bet s are created by a Player. We’ll update all of the existing cards to name their collaboration with Bet.
+
+
+
+What card has responsibility for keeping all of the Bets? Does Table list that as a responsibility? We should update these cards to clarify this collaboration.
+
+
+
+
+
+You should continue this tour, working your way through spinning the Wheel to get a list of winning Outcomes. From there, the Game can get all of the Bets from the Table and see which are based on winning Outcomes and which are based on losing Outcomes. The Game can notify the Player of each losing Bet, and notify the Player of each winning Bet, using the Outcome to compute the winning amount.
+
+This walkthrough will give you an overview of some of the interactions among the objects in the working application. You may uncover additional design ideas from this walkthrough. The most important outcome of the walkthrough is a clear sense of the responsibilities and the collaborations required to create the necessary application behavior.
+
+
+
+
+
+Roulette Solution Questions and Answers
+
+
+Why does the Game class run the sequence of steps? Isn’t that the responsibility of some “main program?”
+
+Coffee Shop Answer. We haven’t finished designing the entire application, so we need to reflect our own ignorance of how the final application will be assembled from the various parts. Rather than allocate too many responsibilities to Game, and possibly finding conflicts or complication, we’d rather allocate too few responsibilities until we know more.
+
+From another point of view, designing the main program is premature because we haven’t finished designing the entire application. We anticipate a Game object being invoked from some statistical data gathering object to run one game. The data gathering object will then get the final stake from the player and record this. Game‘s responsibilities are focused on playing the game itself. We’ll need to add a responsibility to Game to collaborate with the data gathering class to run a number of games as a “session”.
+
+Technical Answer. In procedural programming (especially in languages like COBOL), the “main program” is allocated almost all of the responsibilities. These procedural main programs usually contain a number of elements, all of which are very tightly coupled. This is a bad design, since the responsibilities aren’t allocated as narrowly as possible. One small change in one place breaks the whole program.
+
+In OO languages, we can reduce the main program to a short list of object constructors, with the real work delegated to the objects. This level of coupling assures us that a small change to one class has no impact on other classes or the program as a whole.
+
+
+
+
+
+Why is Outcome a separate class? Each object that is an instance of Outcome only has two attributes; why not use an array of Strings for the names, and a parallel array of integers for the odds?
+
+Representation. We prefer not to decompose an object into separate data elements. If we do decompose this object, we will have to ask which class would own these two arrays? If Wheel keeps these, then Table becomes very tightly coupled to these two arrays that should be Wheel ‘s responsibility. If Table keeps these, then Wheel is priviledged to know details of how Table is implemented. If we need to change these arrays to another storage structure, two classes would change instead of one.
+
+Having the name and odds in a single Outcome object allows us to change the representation of an Outcome. For example, we might replace the String as the identification of the outcome, with a collection of the individual numbers that comprise this outcome. This would identify a straight bet by the single winning number; an even money bet would be identified by an array of the 18 winning numbers.
+
+Responsibility. The principle of isolating responsibility would be broken by this “two parallel arrays” design because now the Game class would need to know how to compute odds. In more complex games, there would be the added complication of figuring the rake. Consider a game where the Player‘s strategy depends on the potential payout. Now the Game and the Player both have copies of the algorithm for computing the payout. A change to one must be paired with a change to the other.
+
+The alternative we have chosen is to encapsulate the payout algorithm along with the relevant data items in a single bundle.
+
+
+
+
+
+If Outcome encapsulates the function to compute the amount won, isn’t it just a glorified subroutine?
+
+If you’re background is BASIC or FORTRAN, this can seem to be true. A class can be thought of as a glorified subroutine library that captures and isolates data elements along with their associated functions.
+
+A class is more powerful than a simple subroutine library with private data. For example, classes introduce inheritance as a way to create a family of closely-related definitions in a simple way.
+
+We discourage trying to mapping OO concepts back to other non-OO languages.
+
+
+
+
+
+What is the distinction between an Outcome and a Bet?
+
+We need to describe the propositions on the table on which you can place bets. The propositions are distinct from an actual amount of money wagered on a proposition. There are a lot of terms to choose from, including bet, wager, proposition, place, location, or outcome. We opted for using Outcome because it seemed to express the open-ended nature of a potential outcome, different from an amount bet on a potential outcome. We’re considering the Outcome as an abstract possibility, and the Bet as a concrete action taken by a player.
+
+Also, as we expand this simulation to cover other games, we will find that the randomized outcome is not something we can directly bet on. In Roulette, however, all outcomes are something we can be bet on, as well as a great many combinations of outcomes. We will revisit this design decision as we move on to other games.
+
+
+
+
+
+Why are the classes so small?
+
+First-time designers of OO applications are sometimes uncomfortable with the notion of emergent behavior. In procedural programming languages, the application’s features are always embodied in a few key procedures. Sometimes a single procedure, named main.
+
+A good OO design partitions responsibility. In many cases, this subdivision of the application’s features means that the overall behavior is not captured in one central place. Rather, it emerges from the interactions of a number of objects.
+
+We have found that smaller elements, with very finely divided responsibilities, are more flexible and permit change. If a change will only alter a portion of a large class, it can make that portion incompatible with other portions of the same class. A symptom of this is a bewildering nest of if-statements to sort out the various alternatives. When the design is decomposed down more finely, a change can be more easily isolated to a single class. A much simpler sequence of if-statements can be focused on selecting the proper class, which can then simply carry out the desired functions.
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Outcome Class
+
+
+In Outcome Analysis we’ll look at the responsibilities and collaborators of Outcome objects.
+
+In Design Decision – Object Identity we’ll look at how we can implement the notion of object identity and object equality. This is important because we will be matching Outcome objects based on bets and spinning the Roulette wheel.
+
+We’ll look forward to some other use cases in Looking Forward. Specifically, we know that players, games, and tables will all share references to single outcome objects. How do we do this properly?
+
+In Outcome Design we’ll detail the design for this class. In Outcome Deliverables we’ll provide a list of modules that must be built.
+
+We’ll look at a Python programming topic in Message Formatting. This is a kind of appendix for beginning programmers.
+
+
+
+
+
+Outcome Analysis
+
+
+There will be several hundred instances of Outcome objects on a given Roulette table. The bins on the wheel, similarly, collect various Outcomes together. The minimum set of Outcome instances we will need are the 38 numbers, Red, and Black. The other instances will add details to our simulation.
+
+In Roulette, the amount won is a simple multiplication of the amount bet and the odds. In other games, however, there may be a more complex calculation because the house keeps 5% of the winnings, called the “rake”. While it is not part of Roulette, it is good to have our Outcome class designed to cope with these more complex payout rules.
+
+Also, we know that other casino games, like Craps, are stateful. An Outcome may change the game state. We can foresee reworking this class to add in the necessary features to change the state of the game.
+
+While we are also aware that some odds are not stated as , we won’t include these other kinds of odds in this initial design. Since all Roulette odds are , we’ll simply assume that the denominator is always 1. We can forsee reworking this class to handle more complex odds, but we don’t need to handle the other cases yet.
+
+The issue we have, however, is comparing outcomes. They’re used in various places. The idea is to compare the outcomes from a spin of the wheel against the outcomes associated with bets.
+
+How does all this comparison work in Python?
+
+Hint: The default rules aren’t helpful.
+
+
+
+
+
+Design Decision – Object Identity
+
+
+Our design will depend on matching Outcome objects. We’ll be testing objects for equality.
+
+The player will be placing bets that contain Outcomes; the table will be holding bets. The wheel will select the winning Outcomes. We need a simple test to see if two objects of the Outcome class are the same.
+
+Was the Outcome for a bet equal to the Outcome contained in a spin of the wheel?
+
+It turns out that this comparison between objects has some subtlety to it.
+
+Here’s the naïve approach to class definition that doesn’t include any provision for equality tests.
+
+
+Naïve Class Definition
+
+>>> class Outcome: ... def __init__(self, name, odds): ... self.name= name ... self.odds= odds
+
+
+
+
+
+This seems elegant enough. Sadly, it doesn’t work out when we need to make equality tests.
+
+In Python, if we do nothing special, the __eq__() test will simply compare the internal object id values. These object id values are unique to each distinct object, irrespective of the attribute values.
+
+This default behavior of objects is shown by the following example:
+
+
+Equality Test Failure
+
+>>> oc1= Outcome( "Any Craps", 8 ) >>> oc2= Outcome( "Any Craps", 8 ) >>> oc1 == oc2 False >>> id(oc1) 4334572936 >>> id(oc2) 4334573272
+
+
+
+
+
+Note
+
+Exact ID values will vary.
+
+
+
+This example shows that we can have two objects that appear equal, but don’t compare as equal. They are distinct objects with the same attribute values. This makes them not equal according to the default methods inherited from object. However, we would like to have two of these objects test as equal.
+
+Actually, we want more than that.
+
+
+
+
+
+More than equal
+
+
+We’ll be creating collections of Outcome objects, and we may need to create sets or maps where hash codes are used in addition to the simple equality tests.
+
+Hash Codes?
+
+Every object has a hash code. The hash code is simply an integer. It can be a summary of the bits that make up the object. It may simply be based on the internal id value for the object. Python computes hash codes and uses these as a quick test for set membership and dictionary keys.
+
+If two hash codes don’t match, the objects can’t possibly be equal. Further comparisons aren’t necessary. If two hash codes do match, then it’s worth the investment of time to do use the more detailed equality comparison.
+
+As we look forward, the Python set and dict depend on a __hash__() method and an __eq__() method of each object in the collection.
+
+
+Hash Code Failure
+
+>>> hash(oc1) 270386794 >>> hash(oc2) 270392959
+
+
+
+
+
+Note
+
+Exact ID values will vary.
+
+
+
+This shows that two objects that look the same to us can have distinct hash codes. Clearly, this is unacceptable, since we want to be able to create a set of Outcome objects without having things that look like repeats.
+
+
+
+
+Layers of Meaning
+
+
+The issue is that we have three distinct layers of meaning for comparing objects to see if they are “equal”.
+
+Have the same hash code. We can call this “hash equality”.
+
+This means the __hash__(self)() method for several objects that represent the same Outcome must also have the same hash code. When we put an object into a set or a dictionary, Python uses the hash() function which is implemented by the __hash__() method.
+
+Sometimes the hash codes are equal, but the object attributes aren’t actually equal. This is called a hash collision, and it’s rare but not unexpected.
+
+If we don’t implement this, the default version isn’t too useful for creating sets of our Outcome obejcts.
+
+
+
+Compare as Equal. We can call this “attribute equality”.
+
+This means that the __eq__() method returns True. When we use the == operator, this is evaluated by using the __eq__() method. This must be overridden by a class to implement attribute equality.
+
+If we don’t implement this, the default version isn’t too useful for our Outcome obejcts.
+
+
+
+Are references to the same object. We can call this “identity”.
+
+We can test that two objects are the same by using the is comparison between two objects. This uses the internal Python identifier for each object. The identifier is revealed by the id() function.
+
+When we use the is comparison, we’re asserting that the two variables are references to the same underlying object. This is the identity comparison.
+
+
+
+
+
+Basics of Equality
+
+
+We note that each instance of Outcome has a distinct Outcome.name value, it seems simple enough to compare names. This is one sense of “equal” that seems to be appropriate.
+
+We can define the __eq__() and __ne__() methods work two ways:
+
+When comparing Outcome and string, it will compares the Outcome.name attribute. This is easy, lazy and seems to work perfectly.
+
+When comparing Outcome and Outcome, it can compare both name and odds. This seems like over-engineering. The odds depend on the name. The name is the key, the odds are just an attribute.
+
+
+
+Similarly, we can compute the value of __hash__() using only the string name, and not the odds. This seems elegantly simple to return the hash of the string name rather than compute a hash.
+
+The definition for __hash__() in section 3.3.1 of the Language Reference Manual tells us to do the calculation using a modulus based on sys.hash_info.width. This is the number of bits, the actual value we want to use is We’d use sys.hash_info.modulus.
+
+
+
+
+
+Looking Forward
+
+
+We’ll be looking at Outcome objects in several contexts.
+
+We’ll have them in bins of a wheel as winning outcomes from each spin of the wheel.
+
+We’ll have them in bets that have been placed on the table.
+
+They player will have some outcomes that they prefer to bet on.
+
+
+
+We’ll be comparing table bet outcomes and bin outcomes for equality. We have a solution to that, above.
+
+We’ll be creating outcome objects, too. This bumps into an interesting problem.
+
+How do we maintain Don’t Repeat Yourself (DRY) when creating Outcome objects?
+
+
+
+We don’t want to include the odds every time we create an Outcome. Repeating the odds would violate the DRY principle.
+
+What are some alternatives?
+
+Global Outcome Objects. We can declare global variables for the various outcomes and use those global objects as needed.
+
+Generally, globals variables are often undesirable because changes to those variables can have unexpected consequences in a large application.
+
+Global constants are no problem at all. The pool of Outcome instances are proper constant values used to create bins and bets. There would be a lot of them, and they would all be assigned to distinct variables. This sounds complicated.
+
+
+
+Outcome Factory. We can create a function which is a Factory for individual Outcome objects.
+
+When some part of the application needs an Outcome object, the factory will do one of two things. If the object doesn’t yet exist, the Factory would create it, save it, and return a reference to it. When some part of the application asked for an Outcome which already exists, the Factory would return a reference to the existing object.
+
+This centralizes the pool of global objects into a single object, the Factory.
+
+Further, we can identify Outcome instances by their names, and avoid repeating the payout odds. The function would map a name of an Outcome the object with all of it’s details.
+
+As a practical matter, the Factory could be seeded with all outcomes. The factory function is – in effect – a global pool of constant objects.
+
+
+
+Singleton Outcome Class. A Singleton class creates and maintains a single instance of itself. This requires that the class have a static instance() method that is a reference to the one-and-only instance of the class.
+
+This saves us from creating global variables. Instead, each class definition contains it’s own private reference to the one-and-only object of that class.
+
+However, this has the profound disadvantage that each distinct outcome would need to be a distinct subclass of Outcome. This is an unappealing level of complexity. Further, it doens’t solve the DRY problem of repeating the details of each Outcome.
+
+
+
+
+
+A Factory seems like a good way to proceed. It can maintain a collection, and provide values from that collection. We can use class strings to identify Outcome objects. We don’t have to repeat the odds.
+
+We’ll look forward to this in subsequent exercises. For now, we’ll start with the basic class.
+
+
+
+
+Outcome Design
+
+
+class Outcome
+
+
+
+
+
+Outcome contains a single outcome on which a bet can be placed.
+
+In Roulette, each spin of the wheel has a number of Outcomes with bets that will be paid off.
+
+For example, the “1” bin has the following winning Outcomes: “1”, “Red”, “Odd”, “Low”, “Column 1”, “Dozen 1-12”, “Split 1-2”, “Split 1-4”, “Street 1-2-3”, “Corner 1-2-4-5”, “Five Bet”, “Line 1-2-3-4-5-6”, “00-0-1-2-3”, “Dozen 1”, “Low” and “Column 1”. All of these bets will payoff if the wheel spins a “1”.
+
+
+
+
+
+Fields
+
+
+Outcome.name
+
+Holds the name of the Outcome. Examples include "1", "Red".
+
+
+
+
+
+Outcome.odds
+
+Holds the payout odds for this Outcome. Most odds are stated as 1:1 or 17:1, we only keep the numerator (17) and assume the denominator is 1.
+
+
+
+
+
+We can use name to provide hash codes and do equality tests.
+
+
+
+
+Constructors
+
+
+Outcome.__init__(self, name, odds)
+
+Parameters: name (str) – The name of this outcome
+
+odds (int) – The payout odds of this outcome.
+
+
+
+
+
+Sets the instance name and odds from the parameter name and odds.
+
+
+
+
+
+Methods
+
+
+For now, we’ll assume that we’re going to have global instances of each Outcome. Later we’ll introduce some kind of Factory.
+
+Outcome.winAmount(self, amount) → amount
+
+Multiply this Outcome‘s odds by the given amount. The product is returned.
+
+Parameters: amount (number) – amount being bet
+
+
+
+
+
+Outcome.__eq__(self, other) → boolean
+
+Compare the name attributes of self and other.
+
+Parameters: other (Outcome) – Another Outcome to compare against.
+
+Returns: True if this name matches the other name.
+
+Return type: bool
+
+
+
+
+
+Outcome.__ne__(self, other) → boolean
+
+Compare the name attributes of self and other.
+
+Parameters: other (Outcome) – Another Outcome to compare against.
+
+Returns: True if this name does not match the other name.
+
+Return type: bool
+
+
+
+
+
+Outcome.__hash__(self) → int
+
+Hash value for this outcome.
+
+Returns: The hash value of the name, hash(self.name).
+
+Return type: int
+
+A hash calculation must include all of the attributes of an object that are essential to it’s distinct identity.
+
+In this case, we can return hash(self.name) because the odds aren’t really part of what makes an outcome distinct. Each outcome is an abstraction and a string name is all that identifies them.
+
+The definition for __hash__() in section 3.3.1 of the Language Reference Manual tells us to do the calculation using a modulus based on sys.hash_info.width. That value is the number of bits, the actual value we want to use is sys.hash_info.modulus, which is based on the width.
+
+
+
+
+
+Outcome.__str__(self) → string
+
+Easy-to-read representation of this outcome. See Message Formatting.
+
+This easy-to-read String output method is essential. This should return a String representation of the name and the odds. A form that looks like 1-2 Split (17:1) works nicely.
+
+Returns: String of the form name (odds:1).
+
+Return type: str
+
+
+
+
+
+Outcome.__repr__(self) → string
+
+Detailed representation of this outcome. See Message Formatting.
+
+Returns: String of the form Outcome(name, odds).
+
+Return type: str
+
+
+
+
+
+Outcome Deliverables
+
+
+There are two deliverables for this exercise. Both will have Python docstrings.
+
+The Outcome class.
+
+
+
+Unit tests of the Outcome class. This can be doctest strings inside the class itself, or it can be a separate unittest.TestCase class.
+
+The unit test should create a three instances of Outcome, two of which have the same name. It should use a number of individual tests to establish that two Outcome with the same name will test true for equality, have the same hash code, and establish that the winAmount() method works correctly.
+
+
+
+
+
+Message Formatting
+
+
+For the very-new-to-Python, there are few variations on creating a formatted string.
+
+Generally, we simply use something like this.
+
+def __str__( self ): return "{name:s} ({odds:d}:1)".format_map( vars(self) )
+
+
+
+
+
+This uses the built-in vars() function to expose the attributes of an object as a simple dictionary that maps attribute names to values.
+
+This is similar to using the self.__dict__ internal dictionary.
+
+The format string uses :s and :d as detailed specifications for the values to interpolate into the string. There’s a lot of flexbility in how numbers are formatted.
+
+There’s another variation that can be handy.
+
+def __repr__( self ): return "{class_:s}({name!r}, {odds!r})".format( class_=type(self).__name__, **vars(self) )
+
+
+
+
+
+This exposes the class name as well as the attribute values.
+
+We’ve used the !r to request the internal representation for each attribute. For a string, it means it will be explicitly quoted.
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Bin Class
+
+
+This chapter will present the design for the Bin class. In Bin Analysis we’ll look at the responsibilities and collaborators for a bin.
+
+As part of designing a Bin, we need to choose what is the most appropriate kind of collection class to use. We’ll show how to do this in Design Decision – Choosing A Collection.
+
+In Wrap vs. Extend a Collection we’ll look at two principle ways to embed a collection class in an application. We’ll clarify a few additional issues in Bin Questions and Answers.
+
+In the Bin Design section we’ll provide the detailed design information. In Bin Deliverables we’ll enumerate what must be built.
+
+
+
+
+
+Bin Analysis
+
+
+The Roulette wheel has 38 bins, identified with a number and a color. Each of these bins defines a number of closely related winning Outcomes. At this time, we won’t enumerate each of the 38 Bins of the wheel and all of the winning Outcomes (from two to fourteen in each Bin); we’ll save that for a later exercise.
+
+At this time, we’ll define the Bin class, and use this class to contain a number of Outcome objects.
+
+Two of the Bins have relatively few Outcomes. Specifically, the 0 Bin only contains the basic “0” Outcome and the “00-0-1-2-3” Outcome . The 00 Bin , similarly, only contains the basic “00” Outcome and the “00-0-1-2-3” Outcome .
+
+The other 36 Bins contain the straight bet, split bets, street bet, corner bets, line bets and various outside bets (column, dozen, even or odd, red or black, high or low) that will win if this Bin is selected. Each number bin has from 12 to 14 individual winning Outcomes.
+
+Some Outcomes, like “red” or “black”, occur in as many as 18 individual Bins. Other Outcomes, like the straight bet numbers, each occur in only a single Bin. We will have to be sure that our Outcome objects are shared appropriately by the Bins.
+
+Since a Bin is just a collection of individual Outcome objects, we have to select a collection class to contain the objects.
+
+
+
+
+
+Design Decision – Choosing A Collection
+
+
+There are five basic Python types that are a containers for other objects.
+
+Immutable Sequence: tuple. This is a good candidate for the kind of collection we need, since the elements of a Bin don’t change. Howver, a tuple allows duplicates and retains things in a specific order; we can’t tolerate duplicates, and order doesn’t matter.
+
+Mutable Sequence: list. While handy for the initial construction of the bin, this isn’t really useful because the contents of a bin don’t change once they have been enumerated.
+
+Mutable Mapping: dict. We don’t need the key-to-value mapping feature at all. A map does more than we need for representing a Bin.
+
+Mutable Set: set. Duplicates aren’t allowed, membership tests are fast, and there’s no inherent ordering. This looks close to what we need.
+
+Immutable Set: frozenset. Duplicates aren’t allowed, membership tests are fast, and there’s no inherent ordering. There’s not changing it after it’s been built. This seems to be precisely what we need.
+
+
+
+Having looked at the fundamental collection varieties, we will elect to use a frozenset.
+
+How will we use this collection?
+
+
+
+
+Wrap vs. Extend a Collection
+
+
+There are two general ways to use a collection.
+
+Wrap. Define a class which has an attribute that holds the collection. We’re wrapping an existing data structure in a new class.
+
+Something like this:
+
+class Bin: def __init__(self, outcomes): self.outcomes= frozenset(outcomes)
+
+
+
+
+
+Extend. Define a class which is the collection. We’re extending an existing data structure.
+
+Something like this:
+
+class Bin(fronzenset): pass
+
+
+
+
+
+Both are widely-used design techniques. The tradeoff between them isn’t clear at first.
+
+Considerations include the following:
+
+When we wrap, we’ll often need to write a lot of additional methods for representation, length, comparisons, inquiries, etc.
+
+In some cases, we will wrap a collection specifically so that these additional methods are not available. We want to completely conceal the underlying data structure.
+
+
+
+When we extend, we get all of the base methods of the collection. We can add any unique features.
+
+
+
+
+
+In this case, extending the existing data structure seems to make more sense than wrapping a frozenset.
+
+
+
+
+Bin Questions and Answers
+
+
+Why wasn’t Bin in the design overview?
+
+The definition of the Roulette game did mention the 38 bins of the wheel. However, when identifying the nouns, it didn’t seem important. Then, as we started designing the Wheel class, the description of the wheel as 38 bins came more fully into focus. Rework of the preliminary design is part of detailed design. This is the first of several instances of rework.
+
+
+
+Why introduce an entire class for the bins of the wheel? Why can’t the wheel be an array of 38 individual arrays?
+
+There are two reasons for introducing Bin as a separate class: to improve the fidelity of our object model of the problem, and to reduce the complexity of the Wheel class. The definition of the game describes the wheel as having 38 bins, each bin causes a number of individual Outcomes to win. Without thinking too deeply, we opted to define the Bin class to hold a collection of Outcomes. At the present time, we can’t foresee a lot of processing that is the responsibility of a Bin. But allocating a class permits us some flexibility in assigning responsibilities there in the future.
+
+Additionally, looking forward, it is clear that the Wheel class will use a random number generator and will pick a winning Bin. In order to keep this crisp definition of responsibilities for the Wheel class, it makes sense to delegate all of the remaining details to another class.
+
+
+
+
+
+Isn’t an entire class for bins a lot of overhead?
+
+The short answer is no, class definitions are almost no overhead at all. Class definitions are part of the compiler’s world; at run-time they amount to a few simple persistent objects that define the class. It’s the class instances that cause run-time overhead.
+
+In a system where were are counting individual instruction executions at the hardware level, this additional class may slow things down somewhat. In most cases, however, the extra few instructions required to delegate a method to an internal object is offset by the benefits gained from additional flexibility.
+
+
+
+
+
+How can you introduce Set, List, Vector when these don’t appear in the problem?
+
+We have to make a distinction between the classes that are uncovered during analysis of the problem in general, and classes are that just part of the implementation of this particular solution. This emphasizes the distinction between the problem as described by users and a solution as designed by software developers.
+
+The collections framework is part of a solution, and only hinted at by the definition of the problem. Generally, these solution-oriented classes are parts of frameworks or libraries that came with our tools, or that we can license for use in our application. The problem-oriented classes, however, are usually unique to our problem.
+
+
+
+
+
+Why extend a built-in data structure? Why not simply use it?
+
+There are two reasons for extending a built-in data structure:
+
+We can easily add methods by extending. In the case of a Bin, there isn’t much we want to add.
+
+We can easily change the underlying data structure by extending. For example, we might have a different set-like collection that also inherits from Collections.abc.Set. We can make this change in just one place – our class extension – and the entire application benefits from the alternative set implementation.
+
+
+
+
+
+What about hash and equality?
+
+We are’t going to be comparing bins against each other. The default rules for equality and hash computation will work out just fine.
+
+
+
+
+
+Bin Design
+
+
+class Bin(Collections.frozenset)
+
+
+
+
+
+Bin contains a collection of Outcomes which reflect the winning bets that are paid for a particular bin on a Roulette wheel. In Roulette, each spin of the wheel has a number of Outcomes. Example: A spin of 1, selects the “1” bin with the following winning Outcomes: “1” , “Red” , “Odd” , “Low” , “Column 1” , “Dozen 1-12” , “Split 1-2” , “Split 1-4” , “Street 1-2-3” , “Corner 1-2-4-5” , “Five Bet” , “Line 1-2-3-4-5-6” , “00-0-1-2-3” , “Dozen 1” , “Low” and “Column 1” . These are collected into a single Bin .
+
+
+
+
+
+Fields
+
+
+Since this is an extension to the existing frozenset, we don’t need to define any additional fields.
+
+
+
+
+Constructors
+
+
+We don’t really need to write any more specialized constructor method.
+
+We’d use this as follows:
+
+
+Python Bin Construction
+
+five= Outcome( "00-0-1-2-3", 6 ) zero= Bin( [Outcome("0",35), five] ) zerozero= Bin( [Outcome("00",35), five] )
+
+
+
+
+
+zero is based on references to two objects: the “0” Outcome and the “00-0-1-2-3” Outcome.
+
+zerozero is based on references to two objects: the “00” Outcome and the “00-0-1-2-3” Outcome.
+
+
+
+
+
+Methods
+
+
+We don’t really need to write any more specialized methods.
+
+How do we accumulate several outcomes in a single Bin?
+
+Create a simple list, tuple, or set as an interim structure.
+
+Create the Bin from this.
+
+
+
+We might have something like this:
+
+>>> bin1 = Bin( {outcome1, outcome2, outcome3} )
+
+
+
+
+
+We created an interim set object and built the final Bin from that collection object.
+
+
+
+
+
+Bin Deliverables
+
+
+There are two deliverables for this exercise. Both should have Python docstrings.
+
+The Bin class.
+
+
+
+A class which performs a unit test of the Bin class. The unit test should create several instances of Outcome, two instances of Bin and establish that Bins can be constructed from the Outcomes.
+
+Programmers who are new to OO techniques are sometimes confused when reusing individual Outcome instances. This unit test is a good place to examine the ways in which object references are shared. A single Outcome object can be referenced by several Bins. We will make increasing use of this in later sections.
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Wheel Class
+
+
+This chapter builds on the previous two chapters, creating a more complete composite object from the Outcome and Bin classes we have already defined. In Wheel Analysis we’ll look at the responsibilities of a wheel and it’s collaboration.
+
+In the Wheel Design we’ll provide the detailed design information. In the Test Setup we’ll address some considerations for testing a class which has random behavior. In Wheel Deliverables we’ll enumerate what must be built.
+
+
+
+
+
+Wheel Analysis
+
+
+The wheel has two responsibilities: it is a container for the Bins and it picks one Bin at random. We’ll also have to look at how to initialize the various Bins that comprise a standard Roulette wheel.
+
+In The Container Responsibility we’ll look at the container aspect in detail.
+
+In The Random Bin Selection Responsibility we’ll look at the random selection aspects.
+
+Based on this, the Constructing a Wheel section provides a description of how we can build the Wheel instance.
+
+
+
+
+
+The Container Responsibility
+
+
+Since the Wheel is 38 Bins, it is a collection. We can review our survey of available collections in Design Decision – Choosing A Collection for some guidance here.
+
+In this case, the choice of the winning Bin will be selected by a random numeric index. We need some kind of sequential collection.
+
+This makes an immutable tuple very appealing. This is a subclass of collections.abc.Sequence and has the features we’re looking for.
+
+
+
+One consequence of using a sequential collection is that we have to choose an index for the various Bins.
+
+The index values of 1 to 36 are logical mappings to Bins. The Bin at index 1 would contain Outcome("1", 35) among several others. The Bin at index 2 would contain Outcome("2", 35). And so on through 36.
+
+We have a small problem, however, with 0 and 00: we need two separate indexes. While 0 is a valid index, what do we do with 00?
+
+Enumerate some possible solutions before reading on.
+
+
+
+* * *
+
+
+
+Since the index of the Bin doesn’t have any significance at all, we can assign the Bin that has the 00 Outcome to position 37. It doesn’t actually matter because we’ll never really use the index for any purpose other than random selection.
+
+
+
+
+The Random Bin Selection Responsibility
+
+
+In order for the Wheel to select a Bin at random, we’ll need a random number from 0 to 37 that we can use an an index.
+
+The random module offers a Random.choice() function which picks a random value from a sequence. This is ideal for returning a randomly selected Bin from our list of Bins.
+
+Testability. Note that testing a class using random numbers isn’t going to be easy. To do testing properly, we’ll need to create a non-random random number generator that we can use in place of the built-in random number generator.
+
+To create a non-random random-number generator, we can do something like the following.
+
+When testing, we can then set a specific seed value that will generate a known sequence of values.
+
+Create a mock for the random number generator that returns a known, fixed sequence of values. We can leverage the unittest.mock module for this.
+
+
+
+We’ll address this in detail in Review of Testability. For now, we’ll suggest using the first technique – set a specific seed value.
+
+
+
+
+Constructing a Wheel
+
+
+Each instance of Bin has a list of Outcomes. The zero (“0”) and double zero (“00”) Bin s only have two Outcomes. The other numbers have anywhere from twelve to fourteen Outcomes.
+
+Clearly, there’s quite a bit of complexity in building some of the bins.
+
+Rather than dwell on these algorithms, we’ll apply a common OO principle of deferred binding. We’ll build a very basic wheel first and work on the bin-building algorithms later.
+
+It’s often simplest to build a class incrementally. This is an example where the overall structure is pretty simple, but some details are rather complex.
+
+
+
+
+
+Wheel Design
+
+
+class Wheel
+
+
+
+
+
+Wheel contains the 38 individual bins on a Roulette wheel, plus a random number generator. It can select a Bin at random, simulating a spin of the Roulette wheel.
+
+
+
+
+
+Fields
+
+
+Wheel.bins
+
+Contains the individual Bin instances.
+
+This is a tuple of 38 elements. This can be built with tuple( Bin() for i in range(38) )
+
+
+
+
+
+Wheel.rng
+
+A random number generator to use to select a Bin from the bins collection.
+
+Because of the central importance of this particular source of randomness, it seems sensible to isolate it from any other processing that might need random numbers. We can then set a seed value using os.urandom() or specific values for testing.
+
+
+
+
+
+Constructors
+
+
+Wheel.__init__(self)
+
+Creates a new wheel with 38 empty Bins. It will also create a new random number generator instance.
+
+At the present time, this does not do the full initialization of the Bins. We’ll rework this in a future exercise.
+
+
+
+
+
+Methods
+
+
+Bin.addOutcome(number, outcome)
+
+Adds the given Outcome to the Bin with the given number.
+
+Parameters: bin (int) – bin number, in the range zero to 37 inclusive.
+
+outcome (Outcome) – The Outcome to add to this Bin
+
+
+
+
+
+Bin.next() → Bin
+
+Generates a random number between 0 and 37, and returns the randomly selected Bin.
+
+The Random.choice() function of the random module will select one of the available Bin s from the bins list.
+
+Returns: A Bin selected at random from the wheel.
+
+Return type: Bin
+
+
+
+
+
+Bin.get(bin) → Bin
+
+Returns the given Bin from the internal collection.
+
+Parameters: bin (int) – bin number, in the range zero to 37 inclusive.
+
+Returns: The requested Bin.
+
+Return type: Bin
+
+
+
+
+
+Test Setup
+
+
+We need a controlled kind of random number generation for testing purposes. This is done with tests that look like the following:
+
+
+Test Outline
+
+class GIVEN_Wheel_WHEN_next_THEN_random_choice(unittest.TestCase): def setUp(self): self.wheel= Wheel() self.wheel.rng.seed(1) def runTest(self): etc.
+
+
+
+
+
+The values delivered from this seeded random number generator can be seen from this experiment.
+
+
+Fixed pseudo-random sequence
+
+>>> x = random.Random() >>> x.seed(1) >>> [x.randint(0,37) for i in range(10)] [8, 36, 4, 16, 7, 31, 28, 30, 24, 13]
+
+
+
+
+
+This allows us to predict the output from the Wheel.next() method.
+
+
+
+
+Wheel Deliverables
+
+
+There are three deliverables for this exercise. The new class and the unit test will have Python docstrings.
+
+The Wheel class.
+
+A class which performs a unit test of building the Wheel class. The unit test should create several instances of Outcome, two instances of Bin, and an instance of Wheel. The unit test should establish that Bins can be added to the Wheel.
+
+A class which tests the Wheel class by selecting “random” values from a Wheel object using a fixed seed value.
+
+
+
+
+
+© Copyright 2015, Steven F. Lott. Created using Sphinx 1.3.1.
+
+
+
+
+
+index
+
+modules |
+
+next |
+
+previous |
+
+Building Skills in Object-Oriented Design 3.1 documentation »
+
+
+
+
+
+Bin Builder Class
+
+
+We’ll look at the question of filling in the Outcomes in each Bin of the Wheel. The Bin Builder Analysis section will address the various outcomes in details.
+
+In Bin Builder Algorithms we’ll look at eight algorithms for allocating appropriate outcomes to appropriate bins of the wheel.
+
+The BinBuilder Design section will present the detailed design for this class. In Bin Builder Deliverables we’ll define the specific deliverables.
+
+In Internationalization and Localization we’ll identify some considerations for providing local language names for the outcomes.
+
+
+
+
+
+Bin Builder Analysis
+
+
+It is clear that enumerating each Outcome in the 38 Bins by hand is a tedious undertaking. Most Bins contain about fourteen individual Outcomes. We need a one-time-only algorithm to do this job.
+
+It is often helpful to create a class that is used to build an instance of another class. This is a design pattern sometimes called a Builder. We’ll design an object that builds the various Bins and assigns them to the Wheel. This will fill the need left open in the Wheel Class.
+
+Additionally, we note that the complex algorithms to construct the Bins are only tangential to the operation of the Wheel object. Because these are not essential to the design of the Wheel class, we find it is often helpful to segregate the rather complex builder methods into a separate class.
+
+The BinBuilder class will have a method that enumerates the contents of each of the 36 number Bins, building the individual Outcome instances. We can then assign these Outcome objects to the Bins of a Wheel instance. We will use a number of steps to create the various types of Outcomes, and depend on the Wheel to assign each Outcome object to the correct Bin.
+
+
+
+
+
+The Roulette Outcomes
+
+
+Looking at the Available Bets in Roulette gives us a number of geometric rules for determining the various Outcomes that are combinations of individual numbers. These rules apply to the numbers from one to thirty-six. A different – and much simpler – set of rules applies to 0 and 00. First, we’ll survey the table geometry, then we’ll develop specific algorithms for each kind of bet.
+
+Split Bets. Each number is adjacent to two, three or four other numbers. The four corners (1, 3, 34, and 36) only participate in two split bets: 1-2 and 1-4, 2-3 and 3-6, 34-35 and 31-34, 35-36 and 33-36.
+
+The center column of numbers (5, 8, 11, ..., 32) each participate in four split bets with the surrounding numbers.
+
+The remaining “edge” numbers participate in three split bets.
+
+While this is moderately complex, the bulk of the layout (from 4 to 32) can be handled with a simple rule to distinguish the center column from the edge columns. The ends (1, 2, 3, and 34, 35, 36) are a little more complex.
+
+
+
+Street Bets. Each number is a member of one of the twelve street bets.
+
+
+
+Corner Bets. Each number is a member of one, two or four corner bets. As with split bets, the bulk of the layout can be handled with a simple rule to distinguish the column, and hence the “corners”.
+
+A number in the center column (5, 8, 11, ..., 32) is a member of four corners.
+
+All of the numbers along an edge are members of two corners. For example, 4 is part of 1-2-4-5, and 4-5-7-8.
+
+At the ends, 1, 3, and 34, 36, we see outcomes that members of just one corner each.
+
+
+
+Line Bets. Six numbers comprise a line; each number is a member of one or two lines. The ends (1, 2, 3 and 34, 35, 36) are each part of a single line. The remaining 10 rows are each part of two lines.
+
+
+
+Dozen Bets. Each number is a member of one of the three dozens. The three ranges are from 1 to 12, 13 to 24 and 25 to 36, making it very easy to associate numbers and ranges.
+
+
+
+Column Bets. Each number is a member of one of the three columns. Each of the columns has a number numeric relationship. The values are , , and , where .
+
+
+
+The Even-Money Bets. These include Red, Black, Even, Odd, High, Low. Each number on the layout will be associated with three of the six possible even money Outcomes.
+
+One way to handle these is to create the six individual Outcome instances. For each number, n, we can write a suite of if-statements to determine which of the Outcome objects are associated with the given number.
+
+
+
+
+
+The Bins for zero and double zero are just special cases. Each of these Bins has a straight number bet Outcome, plus the “Five Bet” Outcome (00-0-1-2-3, which pays 6:1).
+
+One other thing we’ll probably want are handy names for the various kinds of odds. We might want to define a collection of constants for this.
+
+While can define an Outcome as Outcome( "Number 1", 35 ) , this is a little opaque. A slightly nicer form is Outcome( "Number 1", RouletteGame.StraightBet ).
+
+The payouts are specific to a game, not general features of all Outcomes. They properly belong in some kind of game related class. We haven’t designed the game yet, but we can provide a simplified class which only contains these odds definitions.
+
